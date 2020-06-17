@@ -33,7 +33,7 @@ Drag & Drop ParticleSystem to <i>Material Preset Attacher</i> window and click <
 
 ### Result
 ParticleSystem's Custom Vertex Streams and Custom Data will be overwrited.<br>
-<img src = "Demo/images/3_apply_preset.png"><br>
+<img src = "Demo/images/3_apply_result.png"><br>
 
 
 
