@@ -1,9 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.IO;
-using System.Security.Policy;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace VfxTools.Shuriken.ShaderPresetGenerator
 {

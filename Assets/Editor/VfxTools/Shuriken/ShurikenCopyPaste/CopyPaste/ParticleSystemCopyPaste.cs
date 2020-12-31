@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.SqlServer.Server;
-using UnityEditor;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace VfxTools.ShurikenCopyPaste

@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Security.Policy;
-using UnityEditor;
 using UnityEngine;
 using VfxTools.Shuriken.ShaderPresetGenerator;
-using VfxTools.Utility;
 
 namespace VfxTools.ShurikenCopyPaste
 {
