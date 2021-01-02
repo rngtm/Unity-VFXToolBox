@@ -4,6 +4,11 @@
 ・Shader Preset Tools (Custom Data & Custom Vertex Streams)<br>
 ・etc<br><br>
 
+## Git Path (Unity Package Manager)
+> https://github.com/rngtm/Unity-VFXToolBox.git?path=Assets/VfxToolBox
+
+<br>
+
 ## Usage (Shader Preset)
 Shader Preset save ParticleSystem CustomData and VertexStreams in association with Shader.<br>
 <br>
