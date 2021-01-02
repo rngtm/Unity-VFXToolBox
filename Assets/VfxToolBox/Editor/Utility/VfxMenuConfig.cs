@@ -42,6 +42,9 @@ namespace VfxToolBox
         public const string RandomizerMenuName 
             = "Window/VFX ToolBox/Shuriken Randomizer";
         
+        public const string TestRootMenuName
+            = "Window/VFX ToolBox/Test/";
+        
         // ウィンドウタイトル
         public static readonly GUIContent ToolHubTitleContent
             = new GUIContent("VFXToolHub");

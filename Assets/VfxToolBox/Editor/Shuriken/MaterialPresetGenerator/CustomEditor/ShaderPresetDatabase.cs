@@ -31,11 +31,14 @@ namespace VfxToolBox.Shuriken.ShaderPresetGenerator
                 .FirstOrDefault(preset => preset.GetShader() == shader);
         }
         
-        [MenuItem("Test/Get Test")]
+        [MenuItem(VfxMenuConfig.TestRootMenuName + "Get Test")]
         public static ShaderPresetDatabase Get()
         {
             Debug.Log(VfxToolConfig.PresetDatabasePath);
-            return AssetDatabase.LoadAssetAtPath(VfxToolConfig.PresetDatabasePath, typeof(ShaderPresetDatabase)) as ShaderPresetDatabase;            
+            var asset = AssetDatabase.LoadAssetAtPath(VfxToolConfig.PresetDatabasePath, typeof(ShaderPresetDatabase)) as ShaderPresetDatabase;            
+            Debug.Log(asset);
+
+            return asset;
         }
     }
 }

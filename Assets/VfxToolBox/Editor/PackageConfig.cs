@@ -19,7 +19,7 @@ namespace VfxToolBox
         public static bool IsInstallPackage => isInstallInstallPackage;
 
 
-        [MenuItem("Test/Check Package")]
+        [MenuItem(VfxMenuConfig.TestRootMenuName + "Check Package Installation")]
         [DidReloadScripts]
         public static void CheckInstall()
         {
