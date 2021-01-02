@@ -38,17 +38,17 @@ namespace VfxToolBox
         
         private class InternalToolpath : IToolPath
         {
-            public string VfxToolConfigPath => "VfxToolBox/Editor/Data/VfxToolConfig.asset";
-            public string DefaultPresetExportDirectory => "VfxToolBox/Editor/Data/ShaderPresets";
-            public string PresetDatabasePath => "VfxToolBox/Editor/Data/ShaderPresetDatabase.asset";
+            public string VfxToolConfigPath => "Editor/Data/VfxToolConfig.asset";
+            public string DefaultPresetExportDirectory => "Editor/Data/ShaderPresets";
+            public string PresetDatabasePath => "Editor/Data/ShaderPresetDatabase.asset";
         }
 
         private class UnityProjectToolpath : IToolPath
         {
             private InternalToolpath toolPath;
-            public string VfxToolConfigPath => "Assets/" + toolPath.VfxToolConfigPath;
-            public string DefaultPresetExportDirectory => "Assets/" + toolPath.DefaultPresetExportDirectory;
-            public string PresetDatabasePath => "Assets/" + toolPath.PresetDatabasePath;
+            public string VfxToolConfigPath => "Assets/VfxToolBox/" + toolPath.VfxToolConfigPath;
+            public string DefaultPresetExportDirectory => "Assets/VfxToolBox/" + toolPath.DefaultPresetExportDirectory;
+            public string PresetDatabasePath => "Assets/VfxToolBox/" + toolPath.PresetDatabasePath;
 
             public UnityProjectToolpath(InternalToolpath toolpath)
             {
