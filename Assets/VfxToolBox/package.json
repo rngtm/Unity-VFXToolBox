@@ -1,13 +1,29 @@
 {
     "name": "com.rngtm.vfx-toolbox",
     "displayName": "VFX Toolbox", 
-    "version": "1.0.0",               
+    "version": "1.0.1",               
     "unity": "2021.1",
     "description": "VFX Tools for ParticleSystem.",
     "author": {
         "name": "r-ngtm",
         "url": "https://github.com/rngtm"
     },
+    
+    "keywords": [
+        "shader",
+        "particle",
+        "vfx"
+    ],
+    
     "dependencies": {
-    }
+        "com.unity.render-pipelines.universal": "10.2.2"
+    },
+
+    "samples": [
+        {
+            "displayName": "VFX Sample",
+            "description": "Particle System Samples.",
+            "path": "Samples"
+        }
+    ]
 }

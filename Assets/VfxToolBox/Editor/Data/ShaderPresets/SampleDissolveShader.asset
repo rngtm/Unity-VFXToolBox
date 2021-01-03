@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebebb917bb2f4d97aff5a25ae5b694bc, type: 3}
   m_Name: SampleDissolveShader
   m_EditorClassIdentifier: 
-  shader: {fileID: -6465566751694194690, guid: dd099f7ad58a6a14090c40466b950f5f, type: 3}
+  shader: {fileID: -6465566751694194690, guid: 0edaa3caf861c0446be4692d8e68245c, type: 3}
   comment: 
   values:
   - name: Dissolve Edge
