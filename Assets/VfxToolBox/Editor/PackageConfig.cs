@@ -35,16 +35,16 @@ namespace VfxToolBox
                 {
                     if (Request.Result.Select(q => q.name).Contains(PackageName))
                     {
-                        Debug.Log($"Is Install : {PackageName}");
+                        // Debug.Log($"Is Install : {PackageName}");
                         isInstallInstallPackage = true;
                     }
                     else
                     {
-                        Debug.Log($"Is Not Install : {PackageName}");
+                        // Debug.Log($"Is Not Install : {PackageName}");
                         isInstallInstallPackage = false;
                     }
-                    foreach (var package in Request.Result)
-                        Debug.Log("Package name: " + package.name);
+                    // foreach (var package in Request.Result)
+                    //     Debug.Log("Package name: " + package.name);
                 }
                 else if (Request.Status >= StatusCode.Failure)
                 {
