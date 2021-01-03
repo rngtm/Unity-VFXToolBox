@@ -16,7 +16,6 @@
     ],
     
     "dependencies": {
-        "com.unity.render-pipelines.universal": "10.2.2"
     },
 
     "samples": [
