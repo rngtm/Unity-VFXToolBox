@@ -1,7 +1,7 @@
 {
     "name": "com.rngtm.vfx-toolbox",
     "displayName": "VFX Toolbox", 
-    "version": "1.0.2",               
+    "version": "1.1.0",               
     "unity": "2021.1",
     "description": "VFX Tools for ParticleSystem.",
     "author": {
@@ -21,9 +21,14 @@
 
     "samples": [
         {
-            "displayName": "VFX Sample",
-            "description": "Particle System Samples.",
-            "path": "Samples/SampleData"
+            "displayName": "VFX Sample 1",
+            "description": "Particle System and Spatial UI Samples.",
+            "path": "Samples/SampleData/Sample001"
+        },
+        {
+            "displayName": "VFX Sample 2 - Aura Effect",
+            "description": "Aura Effect Sample.",
+            "path": "Samples/SampleData/Sample002_Aura"
         }
     ]
 }

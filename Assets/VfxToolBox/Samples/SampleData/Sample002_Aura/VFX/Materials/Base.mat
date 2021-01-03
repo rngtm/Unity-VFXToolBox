@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base
+  m_Shader: {fileID: -6465566751694194690, guid: 2999ae657a6ec5a408ea040b9dc0dd4a,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_295DC890:
+        m_Texture: {fileID: 2800000, guid: d6991798fe732134a9e2a6f078e04487, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_3D8EC3EB:
+        m_Texture: {fileID: 2800000, guid: 831964476c626ef4c8a4e74fcaf77a23, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B5591311:
+        m_Texture: {fileID: 2800000, guid: 6a79938b79c720441b6d7c9a867fbc55, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C411B1A4:
+        m_Texture: {fileID: 2800000, guid: ea9dd2e677e5668428fef4e6252d6e4b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_F01C2EA4_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 3903430200ebe264b8bd5a89595598df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_7B9C841A: 3
+    - Vector1_A91A570E: 0.2
+    - Vector1_C2376D86: 0.9
+    - Vector1_EC63876E: 5
+    m_Colors:
+    - Color_5749BB84: {r: 1, g: 1, b: 1, a: 0.40392157}
+    - Color_D637B84C: {r: 0, g: 1, b: 0.8900914, a: 1}
+    - Color_F659ED6A: {r: 0.5254902, g: 0.7867782, b: 1, a: 0.7372549}
+    - Color_FF270ED6: {r: 0.15686274, g: 1, b: 0.9533777, a: 0.2784314}
+    - Vector2_1D7D0B5B: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_386C1F19: {r: 0.2, g: 1, b: 0, a: 0}
+    - Vector2_AED470EE: {r: 1, g: -0.3, b: 0, a: 0}
+    - Vector2_FDA845B1: {r: 0.5, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
