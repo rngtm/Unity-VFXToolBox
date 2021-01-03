@@ -1,5 +1,11 @@
 # Changelog
 
+
+## [1.0.3] - 2021-01-03
+
+### Changes
+Removing shaders from Sample directory completely. 
+
 ## [1.0.2] - 2021-01-03
 
 ### Changes
