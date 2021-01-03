@@ -1,7 +1,7 @@
 {
     "name": "com.rngtm.vfx-toolbox",
     "displayName": "VFX Toolbox", 
-    "version": "1.0.1",               
+    "version": "1.0.2",               
     "unity": "2021.1",
     "description": "VFX Tools for ParticleSystem.",
     "author": {
@@ -23,7 +23,7 @@
         {
             "displayName": "VFX Sample",
             "description": "Particle System Samples.",
-            "path": "Samples"
+            "path": "Samples/SampleData"
         }
     ]
 }
