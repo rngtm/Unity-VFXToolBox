@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.0] - 2021-01-03
+### Changes
+- Add Aura sample (SampleData001). 
+
 ## [1.1.0] - 2021-01-03
 ### Changes
 - Organizing old VFX Samples (SampleData001). 

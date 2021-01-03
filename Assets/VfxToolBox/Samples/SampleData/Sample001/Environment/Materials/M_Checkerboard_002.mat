@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Checkerboard
+  m_Name: M_Checkerboard_002
   m_Shader: {fileID: -6465566751694194690, guid: df4cfeeba907b894aa7bd5c4a52e8147, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,7 +33,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_f7649a64f3e04403af52559192970bbb: {r: 0.0139999995, g: 0.0139999995, b: 0.0139999995, a: 1}
-    - Color_f7649a64f3e04403af52559192970bbb_1: {r: 0.25, g: 0.25, b: 0.25, a: 1}
-    - Vector2_3027fec8e3134c45904cd3df3f708112: {r: 0.25, g: 0.25, b: 0, a: 0}
+    - Color_f7649a64f3e04403af52559192970bbb: {r: 0.027999999, g: 0.027999999, b: 0.027999999, a: 1}
+    - Color_f7649a64f3e04403af52559192970bbb_1: {r: 0, g: 0, b: 0, a: 1}
+    - Vector2_3027fec8e3134c45904cd3df3f708112: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
