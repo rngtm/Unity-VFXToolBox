@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.0] - 2021-01-07
+### Changes
+- Adding C# mesh generation sample in Sample003.
+
 ## [1.2.1] - 2021-01-06
 ### Changes
 - Added UV rotation option for mask textures to ShaderGraphs in Sample001.

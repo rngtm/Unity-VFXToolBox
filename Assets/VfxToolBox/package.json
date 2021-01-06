@@ -1,7 +1,7 @@
 {
     "name": "com.rngtm.vfx-toolbox",
     "displayName": "VFX Toolbox", 
-    "version": "1.2.1",               
+    "version": "1.3.0",               
     "unity": "2021.1",
     "description": "VFX Tools for ParticleSystem.",
     "author": {
@@ -28,6 +28,11 @@
             "displayName": "VFX Sample 2 - Aura Effect",
             "description": "Aura Effect Sample.",
             "path": "Samples/SampleData/Sample002_Aura"
+        },
+        {
+            "displayName": "VFX Sample 3 - Procedural VFX Mesh",
+            "description": "Realtime mesh generation via Unity C#.",
+            "path": "Samples/SampleData/Sample003_ProceduralMesh"
         }
     ]
 }
