@@ -4,9 +4,11 @@ namespace VfxToolBox.Sample._003
 
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
+    [ExecuteInEditMode]
     public class SpiralMeshGenerator : MonoBehaviour
     {
-        [SerializeField] private int curveDivs = 32;
+        [SerializeField, HideInInspector] private int curveDivsU = 32;
+        [SerializeField] private int curveDivsV = 32;
         [SerializeField] private float curveWidth = 0.25f;
         [SerializeField] private float height = 2f;
         [SerializeField] private float loops = 2f;
@@ -35,6 +37,9 @@ namespace VfxToolBox.Sample._003
             ComputeMesh();
         }
 
+        /// <summary>
+        /// 描画フレーム時 実行処理
+        /// </summary>
         void Update()
         {
             if (needComputeMesh)
@@ -52,28 +57,31 @@ namespace VfxToolBox.Sample._003
             needComputeMesh = true;
         }
 
+        /// <summary>
+        /// メッシュの更新
+        /// </summary>
         void ComputeMesh()
         {
-            curveDivs = Mathf.Max(3, curveDivs);
+            curveDivsV = Mathf.Max(3, curveDivsV);
             curveWidth = Mathf.Max(0f, curveWidth);
             loops = Mathf.Max(0f, loops);
 
             // compute points
             Vector3[] points;
-            ComputePoints(out points);
+            ComputeCurvePoints(out points);
 
             // compute vertex uvs, position, color
-            int vertexCount = curveDivs * 2;
+            int vertexCount = curveDivsV * 2;
             Vector2[] uv = new Vector2[vertexCount];
             Vector3[] vertices = new Vector3[vertexCount];
             Color[] colors = new Color[vertexCount];
             Vector3 up = new Vector3(0f, 1f, 0f); // up vector
             float rollRadian = roll * Mathf.Deg2Rad;
-            for (int pi = 0; pi < curveDivs; pi++)
+            for (int pi = 0; pi < curveDivsV; pi++)
             {
                 // compute vectors
                 var forwardVector =
-                    (pi + 1 < curveDivs) ? (points[pi + 1] - points[pi]) : (points[pi] - points[pi - 1]);
+                    (pi + 1 < curveDivsV) ? (points[pi + 1] - points[pi]) : (points[pi] - points[pi - 1]);
                 var rightVector = Vector3.Cross(forwardVector, up).normalized;
                 var normalVector = Vector3.Cross(Vector3.right, Vector3.forward).normalized;
 
@@ -84,7 +92,7 @@ namespace VfxToolBox.Sample._003
                 vertices[2 * pi + 1] = points[pi] - rightPosition;
 
                 // color
-                float t = (float) pi / (curveDivs - 1);
+                float t = (float) pi / (curveDivsV - 1);
                 var colorV = vertexColorV.Evaluate(t);
                 colors[2 * pi] = vertexColorU.Evaluate(0f) * colorV;
                 colors[2 * pi + 1] = vertexColorU.Evaluate(1f) * colorV;
@@ -95,10 +103,10 @@ namespace VfxToolBox.Sample._003
             }
 
             // compute triangles
-            int triangleCount = curveDivs * 6;
+            int triangleCount = curveDivsV * 6;
             int[] triangles = new int[triangleCount];
             int ti = 0;
-            for (int pi = 0; pi < curveDivs - 1; pi++)
+            for (int pi = 0; pi < curveDivsV - 1; pi++)
             {
                 triangles[ti++] = pi;
                 triangles[ti++] = pi + 2;
@@ -119,14 +127,17 @@ namespace VfxToolBox.Sample._003
             mesh.triangles = triangles;
         }
 
-        private void ComputePoints(out Vector3[] points)
+        /// <summary>
+        /// カーブに沿ったポイントを作成
+        /// </summary>
+        private void ComputeCurvePoints(out Vector3[] points)
         {
             float curveTimeMin = radiusCurve[0].time;
             float curveTimeMax = radiusCurve[radiusCurve.length - 1].time;
-            points = new Vector3[curveDivs];
-            for (int i = 0; i < curveDivs; i++)
+            points = new Vector3[curveDivsV];
+            for (int i = 0; i < curveDivsV; i++)
             {
-                float t = (float) i / (curveDivs - 1);
+                float t = (float) i / (curveDivsV - 1);
                 float radian = t * 2f * Mathf.PI * loops;
                 float radius = radiusCurve.Evaluate(Remap(t, 0f, 1f, curveTimeMin, curveTimeMax));
                 float x = Mathf.Cos(radian) * radius;
@@ -139,6 +150,11 @@ namespace VfxToolBox.Sample._003
         private float Remap(float x, float a, float b, float c, float d)
         {
             return (x - a) / (b - a) * (d - c) + c;
+        }
+
+        private void OnDestroy()
+        {
+            DestroyImmediate(mesh);
         }
     }
 }

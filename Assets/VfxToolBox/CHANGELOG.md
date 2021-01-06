@@ -1,8 +1,12 @@
 # Changelog
 
+## [1.3.2] - 2021-01-07
+### Changes
+- Execute *SpiralMeshGenerator.cs* in Edit Mode.
+
 ## [1.3.1] - 2021-01-07
 ### Changes
-- BUG FIX : *Vertex Color U* is not correctly set. (SpiralMeshGenerater.cs)
+- BUG FIX : *Vertex Color U* is not correctly set. (*SpiralMeshGenerator.cs*)
 
 ## [1.3.0] - 2021-01-07
 ### Changes
