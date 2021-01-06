@@ -1,8 +1,14 @@
 # Changelog
 
+## [1.2.1] - 2021-01-06
+### Changes
+- Added UV rotation option for mask textures to ShaderGraphs in Sample001.
+- Adding gradient textures in Sample001. 
+- Adding sample scenes in Sample001.
+
 ## [1.2.0] - 2021-01-03
 ### Changes
-- Add Aura sample (SampleData001). 
+- Adding Aura sample (SampleData001). 
 
 ## [1.1.0] - 2021-01-03
 ### Changes
