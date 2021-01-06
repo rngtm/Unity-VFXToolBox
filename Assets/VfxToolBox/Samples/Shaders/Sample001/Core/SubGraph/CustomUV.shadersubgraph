@@ -4,9 +4,6 @@
     "m_ObjectId": "ee4a727c0612460e814a9fe657084fc9",
     "m_Properties": [
         {
-            "m_Id": "300256adcff2748d89f396f94de9c09f"
-        },
-        {
             "m_Id": "c018e07278873c8eb6d39f09ab7358ec"
         },
         {
@@ -625,24 +622,6 @@
     "m_Property": {
         "m_Id": "ef97c7dbfe1c2387b843bb6598d2700d"
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.BooleanShaderProperty",
-    "m_ObjectId": "300256adcff2748d89f396f94de9c09f",
-    "m_Guid": {
-        "m_GuidSerialized": "c7434867-dd61-4449-8f25-ffd6bb624fd9"
-    },
-    "m_Name": "Rotate 90",
-    "m_DefaultReferenceName": "Boolean_A1C84C83",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": false
 }
 
 {
