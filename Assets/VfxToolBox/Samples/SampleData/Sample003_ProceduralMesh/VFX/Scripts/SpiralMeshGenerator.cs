@@ -85,10 +85,9 @@ namespace VfxToolBox.Sample._003
 
                 // color
                 float t = (float) pi / (curveDivs - 1);
-
-                var colorU = vertexColorU.Evaluate(t);
                 var colorV = vertexColorV.Evaluate(t);
-                colors[2 * pi] = colorU * colorV;
+                colors[2 * pi] = vertexColorU.Evaluate(0f) * colorV;
+                colors[2 * pi + 1] = vertexColorU.Evaluate(1f) * colorV;
 
                 // uv
                 uv[2 * pi] = new Vector2(t, 0f);

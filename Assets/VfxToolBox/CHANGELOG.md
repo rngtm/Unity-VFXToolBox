@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.!] - 2021-01-07
+### Changes
+- BUG FIX : *Vertex Color U* is not correctly set. (SpiralMeshGenerater.cs)
+
 ## [1.3.0] - 2021-01-07
 ### Changes
 - Adding C# mesh generation sample in Sample003.
