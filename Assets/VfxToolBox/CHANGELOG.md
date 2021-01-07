@@ -1,8 +1,12 @@
 # Changelog
 
+## [1.3.5] - 2021-01-07
+### Changes
+- Adding dependencies *com.unity.render-pipelines.universal* into *package.json*.
+
 ## [1.3.4] - 2021-01-07
 ### Changes
-- Change shader name *Hidden/VertexColor* to *VFXToolBox/VertexColor* in Sample003.
+- Changing shader name *Hidden/VertexColor* to *VFXToolBox/VertexColor* in Sample003.
 
 ## [1.3.3] - 2021-01-07
 ### Changes
