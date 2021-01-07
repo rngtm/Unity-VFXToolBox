@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.4] - 2021-01-07
+### Changes
+- Change shader name *Hidden/VertexColor* to *VFXToolBox/VertexColor* in Sample003.
+
 ## [1.3.3] - 2021-01-07
 ### Changes
 - Adding vertex color samples to Sample003.
