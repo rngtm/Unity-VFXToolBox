@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.3] - 2021-01-07
+### Changes
+- Adding vertex color samples to Sample003.
+- Updating mesh division.
+
 ## [1.3.2] - 2021-01-07
 ### Changes
 - Execute *SpiralMeshGenerator.cs* in Edit Mode.

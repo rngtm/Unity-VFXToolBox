@@ -1,7 +1,7 @@
 {
     "name": "com.rngtm.vfx-toolbox",
     "displayName": "VFX Toolbox", 
-    "version": "1.3.2",               
+    "version": "1.3.3",               
     "unity": "2021.1",
     "description": "VFX Tools for ParticleSystem.",
     "author": {
