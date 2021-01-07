@@ -7,7 +7,7 @@ namespace VfxToolBox.Sample._003
     [ExecuteInEditMode]
     public class SpiralMeshGenerator : MonoBehaviour
     {
-        [SerializeField, HideInInspector] private int curveDivsU = 32;
+        [SerializeField] private int curveDivsU = 32;
         [SerializeField] private int curveDivsV = 32;
         [SerializeField] private float curveWidth = 0.25f;
         [SerializeField] private float height = 2f;
@@ -22,10 +22,10 @@ namespace VfxToolBox.Sample._003
 
         [SerializeField] private Gradient vertexColorU = new Gradient();
         [SerializeField] private Gradient vertexColorV = new Gradient();
+        
+        [SerializeField, HideInInspector] private Mesh mesh;
+        [SerializeField, HideInInspector] private MeshFilter meshFilter;
 
-
-        private Mesh mesh;
-        private MeshFilter meshFilter;
         private bool needComputeMesh = false;
 
         private void Start()
@@ -62,59 +62,73 @@ namespace VfxToolBox.Sample._003
         /// </summary>
         void ComputeMesh()
         {
+            curveDivsU = Mathf.Max(2, curveDivsU);
             curveDivsV = Mathf.Max(3, curveDivsV);
             curveWidth = Mathf.Max(0f, curveWidth);
             loops = Mathf.Max(0f, loops);
-
+            
             // compute points
             Vector3[] points;
             ComputeCurvePoints(out points);
 
             // compute vertex uvs, position, color
-            int vertexCount = curveDivsV * 2;
+            int vertexCount = curveDivsU * curveDivsV * 2;
             Vector2[] uv = new Vector2[vertexCount];
             Vector3[] vertices = new Vector3[vertexCount];
             Color[] colors = new Color[vertexCount];
             Vector3 up = new Vector3(0f, 1f, 0f); // up vector
             float rollRadian = roll * Mathf.Deg2Rad;
-            for (int pi = 0; pi < curveDivsV; pi++)
+            for (int vi = 0; vi < curveDivsV; vi++)
             {
                 // compute vectors
                 var forwardVector =
-                    (pi + 1 < curveDivsV) ? (points[pi + 1] - points[pi]) : (points[pi] - points[pi - 1]);
-                var rightVector = Vector3.Cross(forwardVector, up).normalized;
-                var normalVector = Vector3.Cross(Vector3.right, Vector3.forward).normalized;
+                    (vi + 1 < curveDivsV) ? (points[vi + 1] - points[vi]) : (points[vi] - points[vi - 1]);
+                forwardVector = forwardVector.normalized;
+                var rightVector = Vector3.Cross(up, forwardVector);
+                var normalVector = Vector3.Cross(rightVector, forwardVector);
 
-                // position
-                var rightPosition = (rightVector * Mathf.Cos(rollRadian) + normalVector * Mathf.Sin(rollRadian)) *
-                    curveWidth / 2f;
-                vertices[2 * pi] = points[pi] + rightPosition;
-                vertices[2 * pi + 1] = points[pi] - rightPosition;
+                float tv = (float) vi / (curveDivsV - 1);
+                for (int ui = 0; ui < curveDivsU; ui++)
+                {
+                    int vertexIndex = ui + vi * curveDivsU;
 
-                // color
-                float t = (float) pi / (curveDivsV - 1);
-                var colorV = vertexColorV.Evaluate(t);
-                colors[2 * pi] = vertexColorU.Evaluate(0f) * colorV;
-                colors[2 * pi + 1] = vertexColorU.Evaluate(1f) * colorV;
+                    // values in [0, 1]
+                    float tu = (float) ui / (curveDivsU - 1);
 
-                // uv
-                uv[2 * pi] = new Vector2(t, 0f);
-                uv[2 * pi + 1] = new Vector2(t, 1f);
+                    // position
+                    var rightPosition = rightVector * Mathf.Cos(rollRadian) + normalVector * Mathf.Sin(rollRadian);
+                    rightPosition *= curveWidth * tu;
+                    vertices[vertexIndex] = points[vi] + rightPosition;
+
+                    // color
+                    var colorU = vertexColorU.Evaluate(tu);
+                    var colorV = vertexColorV.Evaluate(tv);
+                    colors[vertexIndex] = colorU * colorV;
+
+                    // uv
+                    uv[vertexIndex] = new Vector2(tu, tv);
+                }
             }
 
             // compute triangles
-            int triangleCount = curveDivsV * 6;
+            int triangleCount = (curveDivsU - 1) * (curveDivsV - 1) * 6;
             int[] triangles = new int[triangleCount];
             int ti = 0;
-            for (int pi = 0; pi < curveDivsV - 1; pi++)
+            for (int vi = 0; vi < curveDivsV - 1; vi++)
             {
-                triangles[ti++] = pi;
-                triangles[ti++] = pi + 2;
-                triangles[ti++] = pi + 1;
+                for (int ui = 0; ui < curveDivsU - 1; ui++)
+                {
+                    int pi = ui + vi * curveDivsU;
 
-                triangles[ti++] = pi + 1;
-                triangles[ti++] = pi + 2;
-                triangles[ti++] = pi + 3;
+                    triangles[ti + 0] = pi; 
+                    triangles[ti + 1] = pi + curveDivsU; 
+                    triangles[ti + 2] = pi + 1;
+
+                    triangles[ti + 3] = pi + 1;
+                    triangles[ti + 4] = pi + curveDivsU;
+                    triangles[ti + 5] = pi + curveDivsU + 1;
+                    ti += 6;
+                }
             }
 
             // clear
@@ -125,6 +139,8 @@ namespace VfxToolBox.Sample._003
             mesh.colors = colors;
             mesh.uv = uv;
             mesh.triangles = triangles;
+
+            meshFilter.mesh = mesh;
         }
 
         /// <summary>
