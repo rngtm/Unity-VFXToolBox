@@ -4,6 +4,12 @@
 ・Shader Preset Tools (Custom Data & Custom Vertex Streams)<br>
 ・etc<br><br>
 
+# Requirement
+- Unity 2020.2.0 or higher
+- Universal RP 10.2.2 or higher
+
+<br>
+
 ## Git Path (Unity Package Manager)
 > https://github.com/rngtm/Unity-VFXToolBox.git?path=Assets/VfxToolBox
 
