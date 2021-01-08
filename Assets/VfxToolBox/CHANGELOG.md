@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.4.2] - 2021-01-08
+### Changes
+- Merge commonly used sample assets into *_Common* directory.
 
 ## [1.4.1] - 2021-01-08
 ### Changes
