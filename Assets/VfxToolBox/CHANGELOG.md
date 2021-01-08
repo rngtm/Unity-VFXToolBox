@@ -1,5 +1,10 @@
 # Changelog
 
+
+## [1.4.1] - 2021-01-08
+### Changes
+- BUG FIX : Fixed compile error when importing *Sample003*.
+
 ## [1.4.0] - 2021-01-08
 ### Changes
 - Adding support for mesh export of *SpiralMeshGenerator* in *Sample003*. <br>
