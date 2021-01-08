@@ -22,11 +22,15 @@ namespace VfxToolBox.Sample._003
 
         [SerializeField] private Gradient vertexColorU = new Gradient();
         [SerializeField] private Gradient vertexColorV = new Gradient();
+
+        [SerializeField] private bool reverseNormal = false;
         
         [SerializeField, HideInInspector] private Mesh mesh;
         [SerializeField, HideInInspector] private MeshFilter meshFilter;
 
         private bool needComputeMesh = false;
+
+        public Mesh Mesh => mesh;
 
         private void Start()
         {
@@ -70,13 +74,14 @@ namespace VfxToolBox.Sample._003
             // compute points
             Vector3[] points;
             ComputeCurvePoints(out points);
-
+            
             // compute vertex uvs, position, color
             int vertexCount = curveDivsU * curveDivsV * 2;
-            Vector2[] uv = new Vector2[vertexCount];
-            Vector3[] vertices = new Vector3[vertexCount];
-            Color[] colors = new Color[vertexCount];
-            Vector3 up = new Vector3(0f, 1f, 0f); // up vector
+            var uv = new Vector2[vertexCount];
+            var tangents = new Vector4[vertexCount]; // along Texture-U direction
+            var vertices = new Vector3[vertexCount];
+            var colors = new Color32[vertexCount];
+            var up = new Vector3(0f, 1f, 0f); // up vector
             float rollRadian = roll * Mathf.Deg2Rad;
             for (int vi = 0; vi < curveDivsV; vi++)
             {
@@ -84,21 +89,20 @@ namespace VfxToolBox.Sample._003
                 var forwardVector =
                     (vi + 1 < curveDivsV) ? (points[vi + 1] - points[vi]) : (points[vi] - points[vi - 1]);
                 forwardVector = forwardVector.normalized;
-                var rightVector = Vector3.Cross(up, forwardVector);
-                var normalVector = Vector3.Cross(rightVector, forwardVector);
+                var rightVector = Vector3.Cross(up, forwardVector).normalized;
+                var normalVector = Vector3.Cross(rightVector, forwardVector).normalized;
 
-                float tv = (float) vi / (curveDivsV - 1);
+                float tv = (float) vi / (curveDivsV - 1); // values in [0, 1]
                 for (int ui = 0; ui < curveDivsU; ui++)
                 {
                     int vertexIndex = ui + vi * curveDivsU;
 
-                    // values in [0, 1]
-                    float tu = (float) ui / (curveDivsU - 1);
+                    float tu = (float) ui / (curveDivsU - 1); // values in [0, 1]
 
                     // position
-                    var rightPosition = rightVector * Mathf.Cos(rollRadian) + normalVector * Mathf.Sin(rollRadian);
-                    rightPosition *= curveWidth * tu;
-                    vertices[vertexIndex] = points[vi] + rightPosition;
+                    var tangent = rightVector * Mathf.Cos(rollRadian) + normalVector * Mathf.Sin(rollRadian);
+                    vertices[vertexIndex] = points[vi] + curveWidth * tu * tangent;
+                    tangents[vertexIndex] = new Vector4(tangent.x, tangent.y, tangent.z, 1f);
 
                     // color
                     var colorU = vertexColorU.Evaluate(tu);
@@ -131,14 +135,21 @@ namespace VfxToolBox.Sample._003
                 }
             }
 
+            if (mesh == null)
+            {
+                mesh = new Mesh();
+            }
+            
             // clear
             mesh.triangles = null;
 
             // set
             mesh.vertices = vertices;
-            mesh.colors = colors;
+            mesh.colors32 = colors;
             mesh.uv = uv;
             mesh.triangles = triangles;
+            mesh.tangents = tangents;
+            mesh.RecalculateNormals();
 
             meshFilter.mesh = mesh;
         }

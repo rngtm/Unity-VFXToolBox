@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0] - 2021-01-08
+### Changes
+- Adding support for mesh export of *SpiralMeshGenerator* in *Sample003*. <br>
+You can now save the spiral mesh as asset.
+
+- Assigning a value of *Color32* instead of *Color* to the mesh vertex color.
+
 ## [1.3.5] - 2021-01-07
 ### Changes
 - Adding dependencies *com.unity.render-pipelines.universal* into *package.json*.
