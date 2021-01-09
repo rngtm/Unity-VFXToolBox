@@ -1,7 +1,7 @@
 ﻿namespace VfxToolBox.Sample._003
 {
     using UnityEngine;
-
+    
     public static class SpiralMeshGeneratorCore
     {
         /// <summary>
@@ -80,7 +80,6 @@
                     ti += 6;
                 }
             }
-
 
             // clear
             mesh.triangles = null;
