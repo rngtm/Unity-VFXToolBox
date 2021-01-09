@@ -5,14 +5,15 @@
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
     [ExecuteInEditMode]
-    public class CircleMeshGenerator : MonoBehaviour
+    public class DiscMeshGenerator : MonoBehaviour
     {
         [SerializeField] private int divsU = 32; // 円周方向の分割数 
+        [SerializeField] private int divsV = 4; // 半径方向の分割数 
         [SerializeField] private float innerRadius = 0f;
         [SerializeField] private float outerRadius = 1f;
         
         [SerializeField] public Gradient vertexColorU = new Gradient();
-        [SerializeField, HideInInspector] public Gradient vertexColorV = new Gradient();
+        [SerializeField] public Gradient vertexColorV = new Gradient();
         [SerializeField, HideInInspector] private Mesh mesh;
         [SerializeField, HideInInspector] private MeshFilter meshFilter;
         private bool needComputeMesh = false;
@@ -62,56 +63,55 @@
             ComputeCirclePoints(divsU, outerRadius, out outerPoints);
             
             // compute vertices, color, uv
-            int vertexCount = divsU * 2;
+            int vertexCount = divsU * divsV;
             var vertices = new Vector3[vertexCount];
             var colors32 = new Color32[vertexCount];
             var uv = new Vector2[vertexCount];
             for (int ui = 0; ui < divsU; ui++)
             {
                 float tu = (float) ui / (divsU - 1);
+                var colorU = vertexColorU.Evaluate(tu);
 
-                // position
-                vertices[ui] = innerPoints[ui];
-                vertices[ui + divsU] = outerPoints[ui];
+                for (int vi = 0; vi < divsV; vi++)
+                {
+                    float tv = (float) vi / (divsV - 1);
+                    var colorV = vertexColorV.Evaluate(tv);
+                    
+                    int vertexIndex =  ui * divsV + vi;
 
-                // color
-                Color32 colorU = vertexColorU.Evaluate(tu);
-                colors32[ui] = colorU;
-                colors32[ui + divsU] = colorU;
+                    // position
+                    vertices[vertexIndex] = Vector3.Lerp(innerPoints[ui], outerPoints[ui], tv);
+
+                    // color
+                    colors32[vertexIndex] = colorU * colorV;
                 
-                // uv
-                uv[ui] = new Vector2(tu, 0f); // inner circle
-                uv[ui + divsU] = new Vector2(tu, 1f); // outer circle
+                    // uv
+                    uv[vertexIndex] = new Vector2(tu, tv); 
+                }
             }
             
             // compute triangles
-            int triangleCount = vertexCount * 6;
-            int[] triangles = new int [triangleCount];
+            int triangleCount = (divsU) * (divsV - 1) * 6;
+            int[] triangles = new int[triangleCount];
             int ti = 0;
-            for (int ui = 0; ui < divsU - 1; ui++)
+            for (int ui = 0; ui < divsU; ui++)
             {
-                triangles[ti] = ui;
-                triangles[ti + 1] = (ui + divsU + 1) ;
-                triangles[ti + 2] = ui + divsU;
+                for (int vi = 0; vi < divsV - 1; vi++)
+                {
+                    int pi = (ui) * divsV + vi;
+                    
+                    triangles[ti] = pi % vertexCount;
+                    triangles[ti + 1] = (pi + divsV) % vertexCount;
+                    triangles[ti + 2] = (pi + divsV + 1) % vertexCount; 
                 
-                triangles[ti + 3] = ui;
-                triangles[ti + 4] = ui + 1;
-                triangles[ti + 5] = (ui + divsU + 1) ;
+                    triangles[ti + 3] = triangles[ti];
+                    triangles[ti + 4] = triangles[ti + 2];
+                    triangles[ti + 5] = (pi + 1) % vertexCount;
 
-                ti += 6;
+                    ti += 6;
+                }
             }
-
-            {
-                int ui = divsU - 1;
-                triangles[ti] = ui;
-                triangles[ti + 1] = divsU;
-                triangles[ti + 2] = ui + divsU;
-                
-                triangles[ti + 3] = ui;
-                triangles[ti + 4] = 0;
-                triangles[ti + 5] = divsU;
-            }
-
+            
             // clear 
             mesh.triangles = null;
             
@@ -131,7 +131,7 @@
             points = new Vector3[divs];
             for (int i = 0; i < divs; i++)
             {
-                float radian = i * Mathf.PI * 2f / divs;
+                float radian = i * Mathf.PI * 2f / (divs - 1);
                 points[i] = new Vector3(Mathf.Cos(radian), 0f, Mathf.Sin(radian)) * radius;
             }
         }
