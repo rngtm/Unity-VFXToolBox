@@ -18,6 +18,8 @@
         [SerializeField, HideInInspector] private MeshFilter meshFilter;
         
         private bool needComputeMesh = false;
+
+        public Mesh Mesh => mesh;
         
         private void Start()
         {
@@ -64,11 +66,12 @@
             ComputeCirclePoints(divsU, innerRadius, out innerPoints);
             ComputeCirclePoints(divsU, outerRadius, out outerPoints);
             
-            // compute vertices, color, uv
+            // compute vertices, color, uv, normal
             int vertexCount = divsU * divsV;
             var vertices = new Vector3[vertexCount];
             var colors32 = new Color32[vertexCount];
             var uv = new Vector2[vertexCount];
+            var normals = new Vector3[vertexCount];
             for (int ui = 0; ui < divsU; ui++)
             {
                 float tu = (float) ui / (divsU - 1);
@@ -89,6 +92,9 @@
                 
                     // uv
                     uv[vertexIndex] = new Vector2(tu, tv); 
+                    
+                    // normal
+                    normals[vertexIndex] = new Vector3(0f, 1f, 0f);
                 }
             }
             
@@ -121,6 +127,7 @@
             mesh.vertices = vertices;
             mesh.colors32 = colors32;
             mesh.uv = uv;
+            mesh.normals = normals;
             mesh.triangles = triangles;
         }
         
