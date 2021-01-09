@@ -16,6 +16,7 @@
         [SerializeField] public Gradient vertexColorV = new Gradient();
         [SerializeField, HideInInspector] private Mesh mesh;
         [SerializeField, HideInInspector] private MeshFilter meshFilter;
+        
         private bool needComputeMesh = false;
         
         private void Start()
@@ -36,6 +37,7 @@
             if (needComputeMesh)
             {
                 divsU = Mathf.Max(3, divsU);
+                divsV = Mathf.Max(2, divsV); 
                 
                 ComputeMesh(mesh);
                 needComputeMesh = false;
