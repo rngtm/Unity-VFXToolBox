@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.6.1] - 2021-01-10
+### Changes
+- Adding spiral vfx samples into *Sample003*.
+
 ## [1.6.0] - 2021-01-10
 ### Changes
 - Adding *CylinderMeshGenerator.cs* into *Sample003*. You can now create cylinder mesh in Unity.

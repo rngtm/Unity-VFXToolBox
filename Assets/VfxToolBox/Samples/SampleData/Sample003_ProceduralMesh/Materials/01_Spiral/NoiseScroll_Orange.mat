@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NoiseScroll
-  m_Shader: {fileID: -6465566751694194690, guid: 60c1a07a392d4e441980bf4fb22c97a4, type: 3}
+  m_Name: NoiseScroll_Orange
+  m_Shader: {fileID: -6465566751694194690, guid: 2261f2d0e3275a94bb6e2fd7ccf61235, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,11 +24,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_5A9225CF:
-        m_Texture: {fileID: 2800000, guid: 73d7c5acb88c4ee4891b6f0fb8176503, type: 3}
+        m_Texture: {fileID: 2800000, guid: 34097d1dfe59a5f46b3c7f75c96713ba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_F43EED19:
-        m_Texture: {fileID: 2800000, guid: 34097d1dfe59a5f46b3c7f75c96713ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7b71147655a16c34f9c30e16f0adbd52, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -61,9 +61,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_BF62E7BA: 0
-    - Boolean_C4E26124: 0
-    - Vector1_670709482db447c8badd94fa152ca6df: 1
-    - Vector1_932A2B99: 1
+    - Boolean_C4E26124: 1
+    - Vector1_670709482db447c8badd94fa152ca6df: 3
+    - Vector1_932A2B99: 4.5
     - Vector1_A9A759B3: 1.5
     - _AlphaClip: 0
     - _Blend: 0
@@ -97,19 +97,23 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _WindFrequency: 6
+    - _WindIntensity: 0.1
+    - _WindSpeed: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_6F723A40: {r: 1, g: 1, b: 1, a: 1}
+    - Color_6F723A40: {r: 1, g: 0.5208904, b: 0, a: 1}
     - Vector2_772442fcfac144958c416aeea2bce171: {r: 0, g: 1, b: 0, a: 0}
-    - Vector2_C46FB305: {r: 1.5, g: 4.5, b: 0, a: 0}
-    - Vector2_F8D6E25D: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_C46FB305: {r: -0.1, g: 0.2, b: 0, a: 0}
+    - Vector2_F8D6E25D: {r: 0.15, g: 0.7, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
-    - _BaseMap_TilingOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _BaseMap_TilingOffset: {r: 1, g: 1, b: 0, a: 0.5}
     - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MaskTex_TilingOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TilingOffset: {r: 1, g: 1, b: 0, a: 0.5}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WindDirection: {r: 0.11, g: 0.02, b: 0.06, a: 0}
   m_BuildTextureStacks: []
