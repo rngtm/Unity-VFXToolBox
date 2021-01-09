@@ -1,6 +1,11 @@
 # Changelog
 
-## [1.5.0] - 2021-01-08
+## [1.6.0] - 2021-01-10
+### Changes
+- Adding *CylinderMeshGenerator.cs* into *Sample003*. You can now create cylinder mesh in Unity.
+- Adding cylinder vfx samples into *Sample003*.
+
+## [1.5.0] - 2021-01-09
 ### Changes
 - Adding *DiscMeshGenerator.cs* into *Sample003*. You can now create disc mesh in Unity.
 - Adding disc vfx samples into *Sample003*.
