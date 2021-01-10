@@ -1,10 +1,10 @@
-﻿using UnityEditor;
-using UnityEngine;
-
-namespace VfxToolBox.Sample._003
+﻿namespace VfxToolBox.Sample._003
 {
-    [CustomEditor(typeof(DiscMeshGenerator))]
-    public class DiscMeshGeneratorInspector : Editor
+    using UnityEngine;
+    using UnityEditor;
+    
+    [CustomEditor(typeof(MeshGeneratorBase), true)]
+    public class MeshGeneratorInspector : Editor
     {
         public override void OnInspectorGUI()
         {
@@ -18,10 +18,10 @@ namespace VfxToolBox.Sample._003
 
         private void SaveMesh()
         {
-            var meshGenerator = target as DiscMeshGenerator;
+            var meshGenerator = target as MeshGeneratorBase;
             if (meshGenerator == null || meshGenerator.Mesh == null) return;
             
-            MeshExporter.SaveMeshDialog(meshGenerator.Mesh, "Save Disc Mesh", "New Disc Mesh.asset");
+            MeshExporter.SaveMeshDialog(meshGenerator.Mesh, "Save Mesh", $"{target.name}.asset");
         }
     }
 }
