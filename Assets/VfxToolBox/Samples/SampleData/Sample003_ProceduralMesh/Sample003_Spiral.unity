@@ -154,6 +154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mesh: {fileID: 2105821678}
+  meshFilter: {fileID: 9786092}
+  objectInstanceID: 21224
   curveDivsU: 3
   curveDivsV: 52
   curveWidth: 0.41
@@ -242,8 +245,6 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  mesh: {fileID: 1216287794}
-  meshFilter: {fileID: 9786092}
 --- !u!23 &9786091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -292,7 +293,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9786089}
-  m_Mesh: {fileID: 1216287794}
+  m_Mesh: {fileID: 2105821678}
 --- !u!4 &9786093
 Transform:
   m_ObjectHideFlags: 0
@@ -307,13 +308,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &93086323
+--- !u!43 &29244463
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name: 21298
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5306,6 +5307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mesh: {fileID: 1190094780}
+  meshFilter: {fileID: 134562722}
+  objectInstanceID: 21244
   curveDivsU: 13
   curveDivsV: 198
   curveWidth: 0.41
@@ -5403,8 +5407,6 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  mesh: {fileID: 743727547}
-  meshFilter: {fileID: 134562722}
 --- !u!23 &134562721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5453,7 +5455,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134562719}
-  m_Mesh: {fileID: 743727547}
+  m_Mesh: {fileID: 1190094780}
 --- !u!4 &134562723
 Transform:
   m_ObjectHideFlags: 0
@@ -5584,13 +5586,294 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!43 &653833152
+--- !u!1 &883702997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883703001}
+  - component: {fileID: 883703000}
+  - component: {fileID: 883702999}
+  - component: {fileID: 883702998}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &883702998
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883702997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &883702999
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883702997}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b066dd69b84dee641a0d78e1a7d1ef6c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &883703000
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883702997}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &883703001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883702997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24, y: -0.04, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081367483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081367487}
+  - component: {fileID: 1081367486}
+  - component: {fileID: 1081367485}
+  - component: {fileID: 1081367484}
+  m_Layer: 0
+  m_Name: Spiral Noise 3 Green
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1081367484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081367483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 1174451356}
+  meshFilter: {fileID: 1081367486}
+  objectInstanceID: 21278
+  curveDivsU: 13
+  curveDivsV: 198
+  curveWidth: 0.41
+  height: 2.1
+  loops: 4
+  roll: 314.8
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  vertexColorU:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 29298
+    ctime2: 35659
+    ctime3: 65535
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 2
+  vertexColorV:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
+    key3: {r: 0.96129835, g: 0.96129835, b: 0.96129835, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 20432
+    ctime2: 35659
+    ctime3: 56283
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+--- !u!23 &1081367485
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081367483}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5477e2884e9d07d48942d6aa47875c33, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1081367486
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081367483}
+  m_Mesh: {fileID: 1174451356}
+--- !u!4 &1081367487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081367483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.75, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1174451356
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name: 21278
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5748,13 +6031,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &743727547
+--- !u!43 &1190094780
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name: 21244
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5901,450 +6184,6 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: -0.029067367, y: 1.1509144, z: 0.00097575784}
     m_Extent: {x: 0.5642345, y: 1.1509144, z: 0.575951}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!1 &883702997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 883703001}
-  - component: {fileID: 883703000}
-  - component: {fileID: 883702999}
-  - component: {fileID: 883702998}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!64 &883702998
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883702997}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &883702999
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883702997}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b066dd69b84dee641a0d78e1a7d1ef6c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &883703000
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883702997}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &883703001
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883702997}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: -0.04, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1081367483
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1081367487}
-  - component: {fileID: 1081367486}
-  - component: {fileID: 1081367485}
-  - component: {fileID: 1081367484}
-  m_Layer: 0
-  m_Name: Spiral Noise 3 Green
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1081367484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081367483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curveDivsU: 13
-  curveDivsV: 198
-  curveWidth: 0.41
-  height: 2.1
-  loops: 4
-  roll: 314.8
-  radiusCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  vertexColorU:
-    serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 1, g: 1, b: 1, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 29298
-    ctime2: 35659
-    ctime3: 65535
-    ctime4: 65535
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 4
-    m_NumAlphaKeys: 2
-  vertexColorV:
-    serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 1, g: 1, b: 1, a: 0}
-    key3: {r: 0.96129835, g: 0.96129835, b: 0.96129835, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 20432
-    ctime2: 35659
-    ctime3: 56283
-    ctime4: 65535
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 5
-    m_NumAlphaKeys: 2
-  mesh: {fileID: 653833152}
-  meshFilter: {fileID: 1081367486}
---- !u!23 &1081367485
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081367483}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5477e2884e9d07d48942d6aa47875c33, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1081367486
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081367483}
-  m_Mesh: {fileID: 653833152}
---- !u!4 &1081367487
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081367483}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.75, y: 0, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1216287794
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 612
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 156
-    localAABB:
-      m_Center: {x: 0.028034687, y: 1.0201031, z: -0.04916221}
-      m_Extent: {x: 1.2469527, y: 1.0201031, z: 1.2167754}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000003000100010003000400010004000200020004000500030006000400040006000700040007000500050007000800060009000700070009000a0007000a00080008000a000b0009000c000a000a000c000d000a000d000b000b000d000e000c000f000d000d000f0010000d0010000e000e00100011000f0012001000100012001300100013001100110013001400120015001300130015001600130016001400140016001700150018001600160018001900160019001700170019001a0018001b00190019001b001c0019001c001a001a001c001d001b001e001c001c001e001f001c001f001d001d001f0020001e0021001f001f00210022001f002200200020002200230021002400220022002400250022002500230023002500260024002700250025002700280025002800260026002800290027002a00280028002a002b0028002b00290029002b002c002a002d002b002b002d002e002b002e002c002c002e002f002d0030002e002e00300031002e0031002f002f0031003200300033003100310033003400310034003200320034003500330036003400340036003700340037003500350037003800360039003700370039003a0037003a00380038003a003b0039003c003a003a003c003d003a003d003b003b003d003e003c003f003d003d003f0040003d0040003e003e00400041003f0042004000400042004300400043004100410043004400420045004300430045004600430046004400440046004700450048004600460048004900460049004700470049004a0048004b00490049004b004c0049004c004a004a004c004d004b004e004c004c004e004f004c004f004d004d004f0050004e0051004f004f00510052004f005200500050005200530051005400520052005400550052005500530053005500560054005700550055005700580055005800560056005800590057005a00580058005a005b0058005b00590059005b005c005a005d005b005b005d005e005b005e005c005c005e005f005d0060005e005e00600061005e0061005f005f0061006200600063006100610063006400610064006200620064006500630066006400640066006700640067006500650067006800660069006700670069006a0067006a00680068006a006b0069006c006a006a006c006d006a006d006b006b006d006e006c006f006d006d006f0070006d0070006e006e00700071006f0072007000700072007300700073007100710073007400720075007300730075007600730076007400740076007700750078007600760078007900760079007700770079007a0078007b00790079007b007c0079007c007a007a007c007d007b007e007c007c007e007f007c007f007d007d007f0080007e0081007f007f00810082007f008200800080008200830081008400820082008400850082008500830083008500860084008700850085008700880085008800860086008800890087008a00880088008a008b0088008b00890089008b008c008a008d008b008b008d008e008b008e008c008c008e008f008d0090008e008e00900091008e0091008f008f0091009200900093009100910093009400910094009200920094009500930096009400940096009700940097009500950097009800960099009700970099009a0097009a00980098009a009b00
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 312
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 40
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 44
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 16224
-    _typelessdata: 000000000000000000000000cdc574bf2963bf3c9c7c953e893795be73bac03c12d074bf0000803f000000ff00000000000000003db774bd87099e3b19bf48be1a27d9be1012673f9f6d963d893795be73bac03c12d074bf0000803f000000ff0000003f000000003db7f4bd87091e3c19bfc8be5df17abee9f4773f55972d3d893795be73bac03c12d074bf0000803f000000ff0000803f000000000673833a8d8c0c3d6f2c0d3a353624bf4310443f8a2336bdcd44b03e79c5943d44a16fbf0000803f050505ff00000000a1a0a03c2298923d988b493df2f143be775ba1be66b3723fdba831bdcd44b03e79c5943d44a16fbf0000803f050505ff0000003fa1a0a03c3c91113e5245833d8838c4be73786fbe36a1783fd9fc39bdcd44b03e79c5943d44a16fbf0000803f050505ff0000803fa1a0a03c3aa5223b8d8c8c3de374753b189ff8be32ab493f6f09c2beaf9c5a3fabd0043e440101bf0000803f0a0a0aff00000000a1a0203d9fcd353ed300c33dc8e5cbbd527286befdab713ff26b4cbeaf9c5a3fabd0043e440101bf0000803f0a0a0aff0000003fa1a0203d5488b43e1975f93d9bbb4fbefb1256be49a5763f2a792bbeaf9c5a3fabd0043e440101bf0000803f0a0a0aff0000803fa1a0203d683c713ad3d2d23d9bb5223cb0c54abe45aa473faefc17bf92ef783ff368493ef878003e0000803f0f0f0fff00000000f1f0703dd7114d3e68b3123e5b06123d58d714be7dc46d3ff18faebe92ef783ff368493ef878003e0000803f0f0f0fff0000003ff1f0703d3999cc3e66fd3b3e505f7b3d0e5dfcbda3a8723f326f96be92ef783ff368493ef878003e0000803f0f0f0fff0000803ff1f0703d8262dfbb8d8c0c3e1cf1833c8c83163eebd5443f494c1fbf3c9d313f18ee8a3e2cc62a3f0000803f141414ff00000000a1a0a03db2a90a3ea682453e0a871c3ed574323d1471683f8b60d5be3c9d313f18ee8a3e2cc62a3f0000803f141414ff0000003fa1a0a03d3c278e3ec0787e3ef947943e14941e3d45316d3f3999bfbe3c9d313f18ee8a3e2cc62a3f0000803f141414ff0000803fa1a0a03df400acbcb0af2f3e2f698a3ca9afe53e8513423f9255f2beb817303eff46b23e44e86b3f0000803f191919ff00000000c9c8c83d9093693cadc7783ecebe523ec471883e4933623f8121c5beb817303eff46b23e44e86b3f0000803f191919ff0000003fc9c8c83d42ca4a3dd5efa03e3b18ca3e1bd17c3e5ba8663fe0a0b6beb817303eff46b23e44e86b3f0000803f191919ff0000803fc9c8c83d6d111abdd3d2523e0c67e63b4430223f607d3f3faf7c4abef39dbfbebd70d73e9c8c533f0000803f1e1e1eff00000000f1f0f03df428eabdb993953ea3ab343e42abeb3e5f885b3f632a6bbef39dbfbebd70d73e9c8c533f0000803f1e1e1eff0000003ff1f0f03d98a443be09bec13e0712b13e30aadf3e949a5f3f61365cbef39dbfbebd70d73e9c8c533f0000803f1e1e1eff0000803ff1f0f03dd56948bdf7f5753e49067fbc0226293f84173d3f54c4083e00bb3fbfc3dcf73ebea8e73e0000803f232323ff000000008d8c0c3e84524fbecccaad3e1a159e3d6cf40d3ff1ef543f71bed03c00bb3fbfc3dcf73ebea8e73e0000803f232323ff0000003f8d8c0c3e4a45b6be9e9ae03e7e052e3e9f34083fd09c583f761efe3c00bb3fbfc3dcf73ebea8e73e0000803f232323ff0000803f8d8c0c3e61783cbd8d8c8c3ece5d42bdcacc053feefc3a3f251de13e7bd857bfe931093f684f32bd0000803f282828ff00000000a1a0203e681c60be89ccc43e86eb66bd2147ff3e90db4e3f17ada03e7bd857bfe931093f684f32bd0000803f282828ff0000003fa1a0203e5c8dc8be840cfd3e9fbc85bd2252f43eca2a523f2188a03e7bd857bfe931093f684f32bd0000803f282828ff0000803fa1a0203e1fceb8bc1e1e9e3e7961a2bde749803e9d4b393fea94243f3aee27bf6690133f157bf9be0000803f2d2d2dff00000000b5b4343ec0cd20be719eda3e3e7a37be33f9933e1598493fb35c0b3f3aee27bf6690133f157bf9be0000803f2d2d2dff0000003fb5b4343ede4095be628f0b3fdfe18ebe8812893edc904c3f5ecf093f3aee27bf6690133f157bf9be0000803f2d2d2dff0000803fb5b4343e13b7af3cb0afaf3ebc95c8bdb683b5bd400d383f937b303fa5b28cbe63721b3f52d93ebf0000803f323232ff00000000c9c8483e0ae30ebd636bef3ef06480beea1cb6bc9043453fee10233fa5b28cbe63721b3f52d93ebf0000803f323232ff0000003fc9c8483ecfd0babd8b93173f70a4cebecf4e2ebd5ae9473ffe891f3fa5b28cbe63721b3f52d93ebf0000803f323232ff0000803fc9c8483ec4389f3d4141c13e2ad8b9bdd3a6d1be2535373f7cda103fceeb2a3e745b213f0b1942bf0000803f373737ff00000000dddc5c3ea54ce53da8b4013f19157cbe67d0b0bef9d4413fd1f20d3fceeb2a3e745b213f0b1942bf0000803f373737ff0000003fdddc5c3e43b0153eaec8223f0e9fcdbe7ee5b8be4529443f460d083fceeb2a3e745b213f0b1942bf0000803f373737ff0000803fdddc5c3ed6b6053ed3d2d23e64344fbd55b921bf5fab363f25179b3e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff00000000f1f0703e11f7753e2a650b3f56c425be49e215bff52c3f3fc186a13e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff0000003ff1f0703ea61bb33eea602d3fcadd8bbe1e6117bfbd31413f048d913e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff0000803ff1f0703e8c6d243e6564e43ea0e2a23c597933bf5157363f323b0cbd5eb53a3fcb14293f86c136be0000803f414141ff000000008382823eb2c39e3e94db143fa2d588bca6782cbfd2243d3fa9a571bc5eb53a3fcb14293f86c136be0000803f414141ff0000003f8382823e9d50eb3ef684373ff2465abd73232abfbfdd3e3f99be49bd5eb53a3fcb14293f86c136be0000803f414141ff0000803f8382823e955d1a3ef7f5f53ee08bda3d75f619bf1625363fcc0fbabe6c2f353ffd932b3f25b2643e0000803f464646ff000000008d8c8c3efe77973e66271e3fe6271c3eb1e715bfdf973b3f7976b1be6c2f353ffd932b3f25b2643e0000803f464646ff0000003f8d8c8c3e32c1e13ed253413fdc094b3ee23c0fbf420a3d3fc5b1c0be6c2f353ffd932b3f25b2643e0000803f464646ff0000803f8d8c8c3edb73be3dc4c3033f843d3f3ed20eb7be9e06363f09001bbffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff000000009796963ec4b3453e0154273f8158993eb086b0be56673a3fbda717bffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff0000003f9796963ece16963e3ee44a3f4012d33e83009cbe88993b3f19c01bbffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff0000803f9796963ef0a3ebbb8d8c0c3f89016f3ef870e7bcddf2353f9ef033bf49e60e3ec6f12e3f6473373f0000803f505050ff00000000a1a0a03ef671af3ca269303fc2b7c23ef7a969bc2e7b393f2d6830bf49e60e3ec6f12e3f6473373f0000803f505050ff0000003fa1a0a03e74e64c3db846543f60f7063fc902033de0733a3f043a2fbf49e60e3ec6f12e3f6473373f0000803f505050ff0000803fa1a0a03ea5bd04be5655153fe8e9653e10959d3e51e4353f73ff21bf236275be8815303fcb672f3f0000803f555555ff00000000abaaaa3e5d0b37be3b6e393f82dfba3e19b0a43e59c1383f22e91cbf236275be8815303fcb672f3f0000803f555555ff0000003fabaaaa3e145969be20875d3f0865013f8ed3b93e1987393f2af115bf236275be8815303fcb672f3f0000803f555555ff0000803fabaaaa3ec8cc78be1e1e1e3fe20c1a3e9414123fecd7353f21fed2bea84e0cbf13fb303fca0ff13e0000803f5a5a5aff00000000b5b4b43e0aedb5be1166423fb8e27c3e7530143fac2c383fdf86c4bea84e0cbf13fb303fca0ff13e0000803f5a5a5aff0000003fb5b4b43eb073efbe04ae663f46dcaf3e6c991a3f7dc5383f7024adbea84e0cbf13fb303fca0ff13e0000803f5a5a5aff0000803fb5b4b43e06ef9fbee7e6263f5fd49d3c43a6323f08cc353f3909bfbd030435bf99b1313f823b0a3e0000803f5f5f5fff00000000bfbebe3e6e26eabe45544b3ff143403dcaa6313f87b3373f538872bd030435bf99b1313f823b0a3e0000803f5f5f5fff0000003fbfbebe3eea2e1abfa3c16f3fd9ce983de9d5313fd624383f08249ebb030435bf99b1313f823b0a3e0000803f5f5f5fff0000803fbfbebe3ed87d9ebeb0af2f3fdfd511be61bf283fe6bf353f4cd87d3e74da2dbf2f44323f18ba6dbe0000803f646464ff00000000c9c8c83e7ec5e5be1b3b543fc89142be2f9a233f154f373f84c78f3e74da2dbf2f44323f18ba6dbe0000803f646464ff0000003fc9c8c83e928616bf86c6783fb04d73bedbfb1c3f9c9d373f5970a93e74da2dbf2f44323f18ba6dbe0000803f646464ff0000803fc9c8c83ed8b863be7978383fc0c696befd64ed3e44b3353fb1c3073fdc58f3be0cbb323fb81009bf0000803f696969ff00000000d3d2d23e47bfa3be421c5d3f20f9cebec628db3e5dfa363fb8960d3fdc58f3be0cbb323fb81009bf0000803f696969ff0000003fd3d2d23e22a2d5be05e0803fc09503bfe5abc23e272a373fa10a163fdc58f3be0cbb323fb81009bf0000803f696969ff0000803fd3d2d23e06e079bd4141413f1e37c9bebc72213e21a6353f64d02f3f3a881abe481c333f23c832bf0000803f6e6e6eff00000000dddcdc3eb44bbcbdf9f8653f074209bf4d64e63dc8b1363f4300313f3a881abe481c333f23c832bf0000803f6e6e6eff0000003fdddcdc3e66a7fbbd5858853f7ee82dbf40395a3d53c6363f26ba323f3a881abe481c333f23c832bf0000803f6e6e6eff0000803fdddcdc3eb238113e0a0a4a3fe70dcebea0963ebe9798353f4a092e3fc2b9563e7e6c333f2d882ebf0000803f737373ff00000000e7e6e63e7f3d3d3e33d26e3f63ce0abf6c756cbebb72363f0792293fc2b9563e7e6c333f2d882ebf0000803f737373ff0000003fe7e6e63e4c42693e2ecd893fd2952ebf443293befe6e363f28d2233fc2b9563e7e6c333f2d882ebf0000803f737373ff0000803fe7e6e63e3c83ac3ed3d2523f1d449dbea9c2f8bed18a353f26cc023f54ce033f2faf333f7c01fcbe0000803f787878ff00000000f1f0f03e978de23ea8a8773f61edd0be4fe204bf4d3b363f313cf23e54ce033f2faf333f7c01fcbe0000803f787878ff0000003ff1f0f03ef94b0c3f3f3f8e3f524b02bf341e0fbfd621363f4400da3e54ce033f2faf333f7c01fcbe0000803f787878ff0000803ff1f0f03e89f7f03e9c9b5b3f2e6cf2bd48882bbff67c353fdc60613e143f303f09e7333f44aa37be0000803f7d7d7dff00000000fbfafa3e2e9d1c3f723e803fd6dc1ebe06b22ebf150a363ff9652d3e143f303f09e7333f44aa37be0000803f7d7d7dff0000003ffbfafa3e97be403f16af923f948344be440b32bf0cdd353f3bd6dc3d143f303f09e7333f44aa37be0000803f7d7d7dff0000803ffbfafa3ead91ff3e6564643f8c8e003eced031bf2e6f353f4ce1fcbdc434303f1d16343fc062353e0000803f828282ff000000008382023f22e8233faaa7843facbd253e09762ebffddd353ff8f033bec434303f1d16343fc062353e0000803f828282ff0000003f8382023f6e07483f221d973fccec4a3e3deb29bf429f353f6c8d72bec434303f1d16343fc062353e0000803f828282ff0000803f8382023f1cdccd3e2e2d6d3f92aabb3e4eac0dbf9c61353f4731e0be8c15043f0d3e343fcdd1f93e0000803f878787ff000000008887073fd501023f2610893f1ae1ee3e863804bf38b6353ffa3af5be8c15043f0d3e343fcdd1f93e0000803f878787ff0000003f8887073f9c151d3fb6899b3fd00b113f3c67f1be6d67353fea6206bf8c15043f0d3e343fcdd1f93e0000803f878787ff0000803f8887073f061c433ef7f5753fa16b0a3f2d5a8fbe5854353fcfe225bf32c55c3e1f60343fd7122d3f0000803f8c8c8cff000000008d8c0c3f0c5e703e09788d3f88e62d3f4a7668be2892353f40da2abf32c55c3e1f60343fd7122d3f0000803f8c8c8cff0000003f8d8c0c3f0ad08e3e16f59f3f6f61513ff70b29beba34353f25d32fbf32c55c3e1f60343fd7122d3f0000803f8c8c8cff0000803f8d8c0c3f9b35bdbdc0be7e3fdb5c183ff4f8773d7847353fee1734bff4b90cbe567d343f251b323f0000803f919191ff000000009291113f3fe8f6bd6cdf913fdcdf3c3f8a72f03d4c71353f951332bff4b90cbe567d343f251b323f0000803f919191ff0000003f9291113f724d18be785fa43fde62613f30fe393e7906353f78f02ebff4b90cbe567d343f251b323f0000803f919191ff0000803f9291113f26b0c2bec4c3833f78e7003f9e12c63e0c3b353fa84517bf3f38e9be8396343fba040b3f0000803f969696ff000000009796163f857ff2be6546963f28671d3f0d39de3e4153353fa3840ebf3f38e9be8396343fba040b3f0000803f969696ff0000003f9796163f722711bf05c9a83fd9e6393fd464f83e26dc343f7ee903bf3f38e9be8396343fba040b3f0000803f969696ff0000803f9796163f465219bf2828883fed138d3e13f51e3f252f353f5e85acbe800d29bf4bac343f5c5e833e0000803f9b9b9bff000000009c9b1b3f29fa3bbf04ad9a3f2602a83eb491253fba37353f5e5e91be800d29bf4bac343f5c5e833e0000803f9b9b9bff0000003f9c9b1b3f0ca25ebfe031ad3f60f0c23e981d2c3f55b5343f644564be800d29bf4bac343f5c5e833e0000803f9b9b9bff0000803f9c9b1b3f308c2fbf8d8c8c3f743d2dbde2e5343fc523353fbc8211bbb4bc33bf38bf343f6880bdbd0000803fa0a0a0ff00000000a1a0203fcb6454bf5a139f3f8aef7abdb352343f741e353f49e46a3db4bc33bf38bf343f6880bdbd0000803fa0a0a0ff0000003fa1a0203f663d79bf269ab13fd050a4bda8b1323fab91343f6fe4fc3db4bc33bf38bf343f6880bdbd0000803fa0a0a0ff0000803fa1a0203f9b741bbff1f0903f3182c0be3d901f3ff518353ff5a2aa3e073612bfb5cf343fac27d6be0000803fa5a5a5ff00000000a6a5253fc36d39bf6e79a33f0b69ecbecdca173f3607353f4f38c53e073612bfb5cf343fac27d6be0000803fa5a5a5ff0000003fa6a5253feb6657bfec01b63ff3270cbfe44e0e3fe070343f449de13e073612bfb5cf343fac27d6be0000803fa5a5a5ff0000803fa6a5253f26a1bdbe5655953f603924bf2307c83eb20e353ff4d5163ffeb699be1ede343f790f24bf0000803faaaaaaff00000000abaa2a3f1a24ddbe4edfa73f44db45bfe092ad3edaf1343f8ef11e3ffeb699be1ede343f790f24bf0000803faaaaaaff0000003fabaa2a3f0ea7fcbe4569ba3f287d67bf96538f3eba52343f1efc263ffeb699be1ede343f790f24bf0000803faaaaaaff0000803fabaa2a3fdc5ac1bcbab9993f8b2044bfb9c8833d0605353f9844343f68a6333dbeea343ff5c534bf0000803fafafafff00000000b0af2f3f96656fbcfd44ac3f862f69bf9b2f623b3ade343f172b353f68a6333dbeea343ff5c534bf0000803fafafafff0000003fb0af2f3fe82ab8bb40d0be3f411f87bf9b5582bd0037343fc116353f68a6333dbeea343ff5c534bf0000803fafafafff0000803fb0af2f3fe19ab43e1e1e9e3f095a35bfbd218ebef2fb343f3f86263fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff00000000b5b4343f3027dc3e83aab03f84c454bf319daabe33cc343fbae81f3fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff0000003fb5b4343fc0d9013fe936c33fff2e74bf9edcc8be891d343f28af173fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff0000803fb5b4343fec5a2a3f8382a23fe62ef1bed29e0dbf6ff3343f31b6e13ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff00000000bab9393f97c04a3fe80fb53f8cb20abfdd1417bfabbb343f7475c83ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff0000003fbab9393f42266b3f4d9dc73fa4cd1cbf838520bf3106343f1b95ab3ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff0000803fbab9393fe3f3543fe7e6a63f1bf4d2bdb14032bf7beb343f715f003e37ff343f1a08353f3880f4bb0000803fbebebeff00000000bfbe3e3f9b0e7a3f2c75b93f1116d6bd519e34bf8eac343f816c833d37ff343f1a08353f3880f4bb0000803fbebebeff0000003fbfbe3e3faa948f3f7203cc3f0838d9bdfa1636bfd8f0333fa2204abb37ff343f1a08353f3880f4bb0000803fbebebeff0000803fbfbe3e3fc5484d3f4c4bab3f400e9f3ec0232cbf1ce4343f70a661be0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff00000000c4c3433fc30c6e3f56dabd3f7bdcc13eb0c826bfc99e343fc7c38ebe0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff0000003fc4c3433f6168873f6069d03fb6aae43ecfe71fbf66dd333fc786aebe0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff0000803fc4c3433fd1a7123fb0afaf3f592d2b3f8969f9be4add343fb66c03bf938bc73e3216353fdbf5163f0000803fc8c8c8ff00000000c9c8483fe21b273f673fc23fc01f4a3f09b8e1be4592343fe2190ebf938bc73e3216353fdbf5163f0000803fc8c8c8ff0000003fc9c8483ff38f3b3f1ecfd43f2612693fd581c6bebccb333f74d518bf938bc73e3216353fdbf5163f0000803fc8c8c8ff0000803fc9c8483f231a453e1414b43f0800613fb5353dbe08d7343f56ea2ebfc0c4773df11b353ffa43343f0000803fcdcdcdff00000000cecd4d3fdccc513e62a4c63f2ffa823fc126febdfd86343f4fb532bfc0c4773df11b353ffa43343f0000803fcdcdcdff0000003fcecd4d3f957f5e3eb034d93f5a74953fd4de6abdd3bb333f33b435bfc0c4773df11b353ffa43343f0000803fcdcdcdff0000803fcecd4d3fb09080be7978b83f06ee613fb404263e53d1343f666730bff90791bef320353f8abd253f0000803fd2d2d2ff00000000d3d2523fec4b9ebe4a09cb3f0af4813ff90d643ee07c343f605d2cbff90791bef320353f8abd253f0000803fd2d2d2ff0000003fd3d2523f2807bcbe1c9add3f11f1923f5ffd923e98ad333f52e226bff90791bef320353f8abd253f0000803fd2d2d2ff0000803fd3d2523f5b6e26bfdddcbc3f2ba32b3f87c1f03e29cc343f507d07bfb7db0ebf4525353f5defdd3e0000803fd7d7d7ff00000000d8d7573f8fb743bf206ecf3fbe62423f8b22043feb73343f821af9beb7db0ebf4525353f5defdd3e0000803fd7d7d7ff0000003fd8d7573fc20061bf62ffe13f5122593f870c103f00a1333fa4c7dfbeb7db0ebf4525353f5defdd3e0000803fd7d7d7ff0000803fd8d7573f646d67bf4141c13fa03e933e4d562a3f8dc7343f65df77be137e32bff728353f2143ea3d0000803fdcdcdcff00000000dddc5c3f560286bfe4d2d33f25409f3eb17f2f3f156c343ffbee3abe137e32bff728353f2143ea3d0000803fdcdcdcff0000003fdddc5c3ffb4d98bf8864e63faa41ab3ed3f8333fff95333f9854efbd137e32bff728353f2143ea3d0000803fdcdcdcff0000803fdddc5c3f050372bfa6a5c53fd9f534bebb53333f7ac3343fc302d43dcdce2abf122c353fece66dbe0000803fe1e1e1ff00000000e2e1613f82838abf9b37d83ff2ba65be7ca0303f5565343fc087293ecdce2abf122c353fece66dbe0000803fe1e1e1ff0000003fe2e1613f81059cbf90c9ea3f06408bbe13912c3f928c333fa5476d3ecdce2abf122c353fece66dbe0000803fe1e1e1ff0000803fe2e1613fcc1142bf0a0aca3fcb2a1cbf0223113ff4bf343f6343d93e4667f3bea02e353f4ac805bf0000803fe6e6e6ff00000000e7e6663fb4045bbf429cdc3fb19737bffc32073fae5f343f30acf23e4667f3bea02e353f4ac805bf0000803fe6e6e6ff0000003fe7e6663f9cf773bf7a2eef3f980453bfb120f73eb684333f3651063f4667f3bea02e353f4ac805bf0000803fe6e6e6ff0000803fe7e6663f5f14c4be6e6ece3ff2a067bf83e8973efbbc343f719f243fb1692cbea830353f03a32fbf0000803febebebff00000000eceb6b3f7cc0d5bedb00e13f2ed185bf599d743e1d5b343f30142b3fb1692cbea830353f03a32fbf0000803febebebff0000003feceb6b3f996ce7be4993f33fe4d197bf5feb323e687e333f7ef7303fb1692cbea830353f03a32fbf0000803febebebff0000803feceb6b3fa914bb3dd3d2d23f9a5d7cbfc84a39bd92ba343f70f0343f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff00000000f1f0703f8833033e6865e53f861c90bf507bddbda357343f7c92333f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff0000003ff1f0703fbcdc283efef7f73f3f0aa2bf79c933beaf79333f36ee303f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff0000803ff1f0703f30c50c3f3737d73f7b7154bf87bac0beb8b8343fd596193fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff00000000f6f5753f2427263fe7c9e93f72766fbf2ec5dbbe4955343ff8b5103fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff0000003ff6f5753f17893f3f975cfc3fb53d85bf96a2f7be9276333f4528063fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff0000803ff6f5753f4848613f9c9bdb3fc2f2f1be0de91dbf75b7343fd03bb23e0bb32b3fb433353f710563be0000803ffafafaff00000000fbfa7a3f883d823f592eee3fe69b04bfdcf023bfc1f3343fc5d3993e0bb32b3fb433353f710563be0000803ffafafaff0000003ffbfa7a3fedd6933f8b6000406b3e10bfd49829bff4c1343f2d0e803e0bb32b3fb433353f710563be0000803ffafafaff0000803ffbfa7a3f0000803f0000e03f2ebd3b35072e33bff0f0333f66b9013e0bb32b3fb433353f710563be0000803fffffffff000000000000803f6499913fbd92f23f91273abd052e33bff4f0333f62b9013e0bb32b3fb433353f710563be0000803fffffffff0000003f0000803fc932a33fbd920240ef27babd042e33bff6f0333f60b9013e0bb32b3fb433353f710563be0000803fffffffff0000803f0000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0.028034687, y: 1.0201031, z: -0.04916221}
-    m_Extent: {x: 1.2469527, y: 1.0201031, z: 1.2167754}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -11191,6 +11030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mesh: {fileID: 29244463}
+  meshFilter: {fileID: 1629888904}
+  objectInstanceID: 21298
   curveDivsU: 6
   curveDivsV: 80
   curveWidth: 0.48
@@ -11279,8 +11121,6 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  mesh: {fileID: 93086323}
-  meshFilter: {fileID: 1629888904}
 --- !u!23 &1629888903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11329,7 +11169,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629888901}
-  m_Mesh: {fileID: 93086323}
+  m_Mesh: {fileID: 29244463}
 --- !u!4 &1629888905
 Transform:
   m_ObjectHideFlags: 0
@@ -11344,197 +11184,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1903932906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1903932910}
-  - component: {fileID: 1903932909}
-  - component: {fileID: 1903932908}
-  - component: {fileID: 1903932907}
-  m_Layer: 0
-  m_Name: Spiral Noise 1 White
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1903932907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903932906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curveDivsU: 13
-  curveDivsV: 198
-  curveWidth: 0.41
-  height: 2.1
-  loops: 4
-  roll: 314.8
-  radiusCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  vertexColorU:
-    serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 1, g: 1, b: 1, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 29298
-    ctime2: 35659
-    ctime3: 65535
-    ctime4: 65535
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 4
-    m_NumAlphaKeys: 2
-  vertexColorV:
-    serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 1, g: 1, b: 1, a: 0}
-    key3: {r: 0.96129835, g: 0.96129835, b: 0.96129835, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 20432
-    ctime2: 35659
-    ctime3: 56283
-    ctime4: 65535
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 5
-    m_NumAlphaKeys: 2
-  mesh: {fileID: 1938861477}
-  meshFilter: {fileID: 1903932909}
---- !u!23 &1903932908
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903932906}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b9613f1525081a8448ca2a26b3aeff75, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1903932909
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903932906}
-  m_Mesh: {fileID: 1938861477}
---- !u!4 &1903932910
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903932906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1938861477
+--- !u!43 &1684819653
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name: 21308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11681,6 +11337,355 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0.020416856, y: 1.1949562, z: -0.04088694}
     m_Extent: {x: 1.2663245, y: 1.1949562, z: 1.2375774}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!1 &1903932906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903932910}
+  - component: {fileID: 1903932909}
+  - component: {fileID: 1903932908}
+  - component: {fileID: 1903932907}
+  m_Layer: 0
+  m_Name: Spiral Noise 1 White
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1903932907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903932906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fca90d210994743b6908587a04023d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 1684819653}
+  meshFilter: {fileID: 1903932909}
+  objectInstanceID: 21308
+  curveDivsU: 13
+  curveDivsV: 198
+  curveWidth: 0.41
+  height: 2.1
+  loops: 4
+  roll: 314.8
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  vertexColorU:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 29298
+    ctime2: 35659
+    ctime3: 65535
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 2
+  vertexColorV:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
+    key3: {r: 0.96129835, g: 0.96129835, b: 0.96129835, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 20432
+    ctime2: 35659
+    ctime3: 56283
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+--- !u!23 &1903932908
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903932906}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b9613f1525081a8448ca2a26b3aeff75, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1903932909
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903932906}
+  m_Mesh: {fileID: 1684819653}
+--- !u!4 &1903932910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903932906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &2105821678
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 21224
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 612
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 156
+    localAABB:
+      m_Center: {x: 0.028034687, y: 1.0201031, z: -0.04916221}
+      m_Extent: {x: 1.2469527, y: 1.0201031, z: 1.2167754}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000003000100010003000400010004000200020004000500030006000400040006000700040007000500050007000800060009000700070009000a0007000a00080008000a000b0009000c000a000a000c000d000a000d000b000b000d000e000c000f000d000d000f0010000d0010000e000e00100011000f0012001000100012001300100013001100110013001400120015001300130015001600130016001400140016001700150018001600160018001900160019001700170019001a0018001b00190019001b001c0019001c001a001a001c001d001b001e001c001c001e001f001c001f001d001d001f0020001e0021001f001f00210022001f002200200020002200230021002400220022002400250022002500230023002500260024002700250025002700280025002800260026002800290027002a00280028002a002b0028002b00290029002b002c002a002d002b002b002d002e002b002e002c002c002e002f002d0030002e002e00300031002e0031002f002f0031003200300033003100310033003400310034003200320034003500330036003400340036003700340037003500350037003800360039003700370039003a0037003a00380038003a003b0039003c003a003a003c003d003a003d003b003b003d003e003c003f003d003d003f0040003d0040003e003e00400041003f0042004000400042004300400043004100410043004400420045004300430045004600430046004400440046004700450048004600460048004900460049004700470049004a0048004b00490049004b004c0049004c004a004a004c004d004b004e004c004c004e004f004c004f004d004d004f0050004e0051004f004f00510052004f005200500050005200530051005400520052005400550052005500530053005500560054005700550055005700580055005800560056005800590057005a00580058005a005b0058005b00590059005b005c005a005d005b005b005d005e005b005e005c005c005e005f005d0060005e005e00600061005e0061005f005f0061006200600063006100610063006400610064006200620064006500630066006400640066006700640067006500650067006800660069006700670069006a0067006a00680068006a006b0069006c006a006a006c006d006a006d006b006b006d006e006c006f006d006d006f0070006d0070006e006e00700071006f0072007000700072007300700073007100710073007400720075007300730075007600730076007400740076007700750078007600760078007900760079007700770079007a0078007b00790079007b007c0079007c007a007a007c007d007b007e007c007c007e007f007c007f007d007d007f0080007e0081007f007f00810082007f008200800080008200830081008400820082008400850082008500830083008500860084008700850085008700880085008800860086008800890087008a00880088008a008b0088008b00890089008b008c008a008d008b008b008d008e008b008e008c008c008e008f008d0090008e008e00900091008e0091008f008f0091009200900093009100910093009400910094009200920094009500930096009400940096009700940097009500950097009800960099009700970099009a0097009a00980098009a009b00
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 312
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 40
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 44
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 16224
+    _typelessdata: 000000000000000000000000cdc574bf2963bf3c9c7c953e893795be73bac03c12d074bf0000803f000000ff00000000000000003db774bd87099e3b19bf48be1a27d9be1012673f9f6d963d893795be73bac03c12d074bf0000803f000000ff0000003f000000003db7f4bd87091e3c19bfc8be5df17abee9f4773f55972d3d893795be73bac03c12d074bf0000803f000000ff0000803f000000000673833a8d8c0c3d6f2c0d3a353624bf4310443f8a2336bdcd44b03e79c5943d44a16fbf0000803f050505ff00000000a1a0a03c2298923d988b493df2f143be775ba1be66b3723fdba831bdcd44b03e79c5943d44a16fbf0000803f050505ff0000003fa1a0a03c3c91113e5245833d8838c4be73786fbe36a1783fd9fc39bdcd44b03e79c5943d44a16fbf0000803f050505ff0000803fa1a0a03c3aa5223b8d8c8c3de374753b189ff8be32ab493f6f09c2beaf9c5a3fabd0043e440101bf0000803f0a0a0aff00000000a1a0203d9fcd353ed300c33dc8e5cbbd527286befdab713ff26b4cbeaf9c5a3fabd0043e440101bf0000803f0a0a0aff0000003fa1a0203d5488b43e1975f93d9bbb4fbefb1256be49a5763f2a792bbeaf9c5a3fabd0043e440101bf0000803f0a0a0aff0000803fa1a0203d683c713ad3d2d23d9bb5223cb0c54abe45aa473faefc17bf92ef783ff368493ef878003e0000803f0f0f0fff00000000f1f0703dd7114d3e68b3123e5b06123d58d714be7dc46d3ff18faebe92ef783ff368493ef878003e0000803f0f0f0fff0000003ff1f0703d3999cc3e66fd3b3e505f7b3d0e5dfcbda3a8723f326f96be92ef783ff368493ef878003e0000803f0f0f0fff0000803ff1f0703d8262dfbb8d8c0c3e1cf1833c8c83163eebd5443f494c1fbf3c9d313f18ee8a3e2cc62a3f0000803f141414ff00000000a1a0a03db2a90a3ea682453e0a871c3ed574323d1471683f8b60d5be3c9d313f18ee8a3e2cc62a3f0000803f141414ff0000003fa1a0a03d3c278e3ec0787e3ef947943e14941e3d45316d3f3999bfbe3c9d313f18ee8a3e2cc62a3f0000803f141414ff0000803fa1a0a03df400acbcb0af2f3e2f698a3ca9afe53e8513423f9255f2beb817303eff46b23e44e86b3f0000803f191919ff00000000c9c8c83d9093693cadc7783ecebe523ec471883e4933623f8121c5beb817303eff46b23e44e86b3f0000803f191919ff0000003fc9c8c83d42ca4a3dd5efa03e3b18ca3e1bd17c3e5ba8663fe0a0b6beb817303eff46b23e44e86b3f0000803f191919ff0000803fc9c8c83d6d111abdd3d2523e0c67e63b4430223f607d3f3faf7c4abef39dbfbebd70d73e9c8c533f0000803f1e1e1eff00000000f1f0f03df428eabdb993953ea3ab343e42abeb3e5f885b3f632a6bbef39dbfbebd70d73e9c8c533f0000803f1e1e1eff0000003ff1f0f03d98a443be09bec13e0712b13e30aadf3e949a5f3f61365cbef39dbfbebd70d73e9c8c533f0000803f1e1e1eff0000803ff1f0f03dd56948bdf7f5753e49067fbc0226293f84173d3f54c4083e00bb3fbfc3dcf73ebea8e73e0000803f232323ff000000008d8c0c3e84524fbecccaad3e1a159e3d6cf40d3ff1ef543f71bed03c00bb3fbfc3dcf73ebea8e73e0000803f232323ff0000003f8d8c0c3e4a45b6be9e9ae03e7e052e3e9f34083fd09c583f761efe3c00bb3fbfc3dcf73ebea8e73e0000803f232323ff0000803f8d8c0c3e61783cbd8d8c8c3ece5d42bdcacc053feefc3a3f251de13e7bd857bfe931093f684f32bd0000803f282828ff00000000a1a0203e681c60be89ccc43e86eb66bd2147ff3e90db4e3f17ada03e7bd857bfe931093f684f32bd0000803f282828ff0000003fa1a0203e5c8dc8be840cfd3e9fbc85bd2252f43eca2a523f2188a03e7bd857bfe931093f684f32bd0000803f282828ff0000803fa1a0203e1fceb8bc1e1e9e3e7961a2bde749803e9d4b393fea94243f3aee27bf6690133f157bf9be0000803f2d2d2dff00000000b5b4343ec0cd20be719eda3e3e7a37be33f9933e1598493fb35c0b3f3aee27bf6690133f157bf9be0000803f2d2d2dff0000003fb5b4343ede4095be628f0b3fdfe18ebe8812893edc904c3f5ecf093f3aee27bf6690133f157bf9be0000803f2d2d2dff0000803fb5b4343e13b7af3cb0afaf3ebc95c8bdb683b5bd400d383f937b303fa5b28cbe63721b3f52d93ebf0000803f323232ff00000000c9c8483e0ae30ebd636bef3ef06480beea1cb6bc9043453fee10233fa5b28cbe63721b3f52d93ebf0000803f323232ff0000003fc9c8483ecfd0babd8b93173f70a4cebecf4e2ebd5ae9473ffe891f3fa5b28cbe63721b3f52d93ebf0000803f323232ff0000803fc9c8483ec4389f3d4141c13e2ad8b9bdd3a6d1be2535373f7cda103fceeb2a3e745b213f0b1942bf0000803f373737ff00000000dddc5c3ea54ce53da8b4013f19157cbe67d0b0bef9d4413fd1f20d3fceeb2a3e745b213f0b1942bf0000803f373737ff0000003fdddc5c3e43b0153eaec8223f0e9fcdbe7ee5b8be4529443f460d083fceeb2a3e745b213f0b1942bf0000803f373737ff0000803fdddc5c3ed6b6053ed3d2d23e64344fbd55b921bf5fab363f25179b3e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff00000000f1f0703e11f7753e2a650b3f56c425be49e215bff52c3f3fc186a13e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff0000003ff1f0703ea61bb33eea602d3fcadd8bbe1e6117bfbd31413f048d913e2fe4083fcfc5253f8ffb0abf0000803f3c3c3cff0000803ff1f0703e8c6d243e6564e43ea0e2a23c597933bf5157363f323b0cbd5eb53a3fcb14293f86c136be0000803f414141ff000000008382823eb2c39e3e94db143fa2d588bca6782cbfd2243d3fa9a571bc5eb53a3fcb14293f86c136be0000803f414141ff0000003f8382823e9d50eb3ef684373ff2465abd73232abfbfdd3e3f99be49bd5eb53a3fcb14293f86c136be0000803f414141ff0000803f8382823e955d1a3ef7f5f53ee08bda3d75f619bf1625363fcc0fbabe6c2f353ffd932b3f25b2643e0000803f464646ff000000008d8c8c3efe77973e66271e3fe6271c3eb1e715bfdf973b3f7976b1be6c2f353ffd932b3f25b2643e0000803f464646ff0000003f8d8c8c3e32c1e13ed253413fdc094b3ee23c0fbf420a3d3fc5b1c0be6c2f353ffd932b3f25b2643e0000803f464646ff0000803f8d8c8c3edb73be3dc4c3033f843d3f3ed20eb7be9e06363f09001bbffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff000000009796963ec4b3453e0154273f8158993eb086b0be56673a3fbda717bffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff0000003f9796963ece16963e3ee44a3f4012d33e83009cbe88993b3f19c01bbffaf0f93eea7a2d3f49cb0c3f0000803f4b4b4bff0000803f9796963ef0a3ebbb8d8c0c3f89016f3ef870e7bcddf2353f9ef033bf49e60e3ec6f12e3f6473373f0000803f505050ff00000000a1a0a03ef671af3ca269303fc2b7c23ef7a969bc2e7b393f2d6830bf49e60e3ec6f12e3f6473373f0000803f505050ff0000003fa1a0a03e74e64c3db846543f60f7063fc902033de0733a3f043a2fbf49e60e3ec6f12e3f6473373f0000803f505050ff0000803fa1a0a03ea5bd04be5655153fe8e9653e10959d3e51e4353f73ff21bf236275be8815303fcb672f3f0000803f555555ff00000000abaaaa3e5d0b37be3b6e393f82dfba3e19b0a43e59c1383f22e91cbf236275be8815303fcb672f3f0000803f555555ff0000003fabaaaa3e145969be20875d3f0865013f8ed3b93e1987393f2af115bf236275be8815303fcb672f3f0000803f555555ff0000803fabaaaa3ec8cc78be1e1e1e3fe20c1a3e9414123fecd7353f21fed2bea84e0cbf13fb303fca0ff13e0000803f5a5a5aff00000000b5b4b43e0aedb5be1166423fb8e27c3e7530143fac2c383fdf86c4bea84e0cbf13fb303fca0ff13e0000803f5a5a5aff0000003fb5b4b43eb073efbe04ae663f46dcaf3e6c991a3f7dc5383f7024adbea84e0cbf13fb303fca0ff13e0000803f5a5a5aff0000803fb5b4b43e06ef9fbee7e6263f5fd49d3c43a6323f08cc353f3909bfbd030435bf99b1313f823b0a3e0000803f5f5f5fff00000000bfbebe3e6e26eabe45544b3ff143403dcaa6313f87b3373f538872bd030435bf99b1313f823b0a3e0000803f5f5f5fff0000003fbfbebe3eea2e1abfa3c16f3fd9ce983de9d5313fd624383f08249ebb030435bf99b1313f823b0a3e0000803f5f5f5fff0000803fbfbebe3ed87d9ebeb0af2f3fdfd511be61bf283fe6bf353f4cd87d3e74da2dbf2f44323f18ba6dbe0000803f646464ff00000000c9c8c83e7ec5e5be1b3b543fc89142be2f9a233f154f373f84c78f3e74da2dbf2f44323f18ba6dbe0000803f646464ff0000003fc9c8c83e928616bf86c6783fb04d73bedbfb1c3f9c9d373f5970a93e74da2dbf2f44323f18ba6dbe0000803f646464ff0000803fc9c8c83ed8b863be7978383fc0c696befd64ed3e44b3353fb1c3073fdc58f3be0cbb323fb81009bf0000803f696969ff00000000d3d2d23e47bfa3be421c5d3f20f9cebec628db3e5dfa363fb8960d3fdc58f3be0cbb323fb81009bf0000803f696969ff0000003fd3d2d23e22a2d5be05e0803fc09503bfe5abc23e272a373fa10a163fdc58f3be0cbb323fb81009bf0000803f696969ff0000803fd3d2d23e06e079bd4141413f1e37c9bebc72213e21a6353f64d02f3f3a881abe481c333f23c832bf0000803f6e6e6eff00000000dddcdc3eb44bbcbdf9f8653f074209bf4d64e63dc8b1363f4300313f3a881abe481c333f23c832bf0000803f6e6e6eff0000003fdddcdc3e66a7fbbd5858853f7ee82dbf40395a3d53c6363f26ba323f3a881abe481c333f23c832bf0000803f6e6e6eff0000803fdddcdc3eb238113e0a0a4a3fe70dcebea0963ebe9798353f4a092e3fc2b9563e7e6c333f2d882ebf0000803f737373ff00000000e7e6e63e7f3d3d3e33d26e3f63ce0abf6c756cbebb72363f0792293fc2b9563e7e6c333f2d882ebf0000803f737373ff0000003fe7e6e63e4c42693e2ecd893fd2952ebf443293befe6e363f28d2233fc2b9563e7e6c333f2d882ebf0000803f737373ff0000803fe7e6e63e3c83ac3ed3d2523f1d449dbea9c2f8bed18a353f26cc023f54ce033f2faf333f7c01fcbe0000803f787878ff00000000f1f0f03e978de23ea8a8773f61edd0be4fe204bf4d3b363f313cf23e54ce033f2faf333f7c01fcbe0000803f787878ff0000003ff1f0f03ef94b0c3f3f3f8e3f524b02bf341e0fbfd621363f4400da3e54ce033f2faf333f7c01fcbe0000803f787878ff0000803ff1f0f03e89f7f03e9c9b5b3f2e6cf2bd48882bbff67c353fdc60613e143f303f09e7333f44aa37be0000803f7d7d7dff00000000fbfafa3e2e9d1c3f723e803fd6dc1ebe06b22ebf150a363ff9652d3e143f303f09e7333f44aa37be0000803f7d7d7dff0000003ffbfafa3e97be403f16af923f948344be440b32bf0cdd353f3bd6dc3d143f303f09e7333f44aa37be0000803f7d7d7dff0000803ffbfafa3ead91ff3e6564643f8c8e003eced031bf2e6f353f4ce1fcbdc434303f1d16343fc062353e0000803f828282ff000000008382023f22e8233faaa7843facbd253e09762ebffddd353ff8f033bec434303f1d16343fc062353e0000803f828282ff0000003f8382023f6e07483f221d973fccec4a3e3deb29bf429f353f6c8d72bec434303f1d16343fc062353e0000803f828282ff0000803f8382023f1cdccd3e2e2d6d3f92aabb3e4eac0dbf9c61353f4731e0be8c15043f0d3e343fcdd1f93e0000803f878787ff000000008887073fd501023f2610893f1ae1ee3e863804bf38b6353ffa3af5be8c15043f0d3e343fcdd1f93e0000803f878787ff0000003f8887073f9c151d3fb6899b3fd00b113f3c67f1be6d67353fea6206bf8c15043f0d3e343fcdd1f93e0000803f878787ff0000803f8887073f061c433ef7f5753fa16b0a3f2d5a8fbe5854353fcfe225bf32c55c3e1f60343fd7122d3f0000803f8c8c8cff000000008d8c0c3f0c5e703e09788d3f88e62d3f4a7668be2892353f40da2abf32c55c3e1f60343fd7122d3f0000803f8c8c8cff0000003f8d8c0c3f0ad08e3e16f59f3f6f61513ff70b29beba34353f25d32fbf32c55c3e1f60343fd7122d3f0000803f8c8c8cff0000803f8d8c0c3f9b35bdbdc0be7e3fdb5c183ff4f8773d7847353fee1734bff4b90cbe567d343f251b323f0000803f919191ff000000009291113f3fe8f6bd6cdf913fdcdf3c3f8a72f03d4c71353f951332bff4b90cbe567d343f251b323f0000803f919191ff0000003f9291113f724d18be785fa43fde62613f30fe393e7906353f78f02ebff4b90cbe567d343f251b323f0000803f919191ff0000803f9291113f26b0c2bec4c3833f78e7003f9e12c63e0c3b353fa84517bf3f38e9be8396343fba040b3f0000803f969696ff000000009796163f857ff2be6546963f28671d3f0d39de3e4153353fa3840ebf3f38e9be8396343fba040b3f0000803f969696ff0000003f9796163f722711bf05c9a83fd9e6393fd464f83e26dc343f7ee903bf3f38e9be8396343fba040b3f0000803f969696ff0000803f9796163f465219bf2828883fed138d3e13f51e3f252f353f5e85acbe800d29bf4bac343f5c5e833e0000803f9b9b9bff000000009c9b1b3f29fa3bbf04ad9a3f2602a83eb491253fba37353f5e5e91be800d29bf4bac343f5c5e833e0000803f9b9b9bff0000003f9c9b1b3f0ca25ebfe031ad3f60f0c23e981d2c3f55b5343f644564be800d29bf4bac343f5c5e833e0000803f9b9b9bff0000803f9c9b1b3f308c2fbf8d8c8c3f743d2dbde2e5343fc523353fbc8211bbb4bc33bf38bf343f6880bdbd0000803fa0a0a0ff00000000a1a0203fcb6454bf5a139f3f8aef7abdb352343f741e353f49e46a3db4bc33bf38bf343f6880bdbd0000803fa0a0a0ff0000003fa1a0203f663d79bf269ab13fd050a4bda8b1323fab91343f6fe4fc3db4bc33bf38bf343f6880bdbd0000803fa0a0a0ff0000803fa1a0203f9b741bbff1f0903f3182c0be3d901f3ff518353ff5a2aa3e073612bfb5cf343fac27d6be0000803fa5a5a5ff00000000a6a5253fc36d39bf6e79a33f0b69ecbecdca173f3607353f4f38c53e073612bfb5cf343fac27d6be0000803fa5a5a5ff0000003fa6a5253feb6657bfec01b63ff3270cbfe44e0e3fe070343f449de13e073612bfb5cf343fac27d6be0000803fa5a5a5ff0000803fa6a5253f26a1bdbe5655953f603924bf2307c83eb20e353ff4d5163ffeb699be1ede343f790f24bf0000803faaaaaaff00000000abaa2a3f1a24ddbe4edfa73f44db45bfe092ad3edaf1343f8ef11e3ffeb699be1ede343f790f24bf0000803faaaaaaff0000003fabaa2a3f0ea7fcbe4569ba3f287d67bf96538f3eba52343f1efc263ffeb699be1ede343f790f24bf0000803faaaaaaff0000803fabaa2a3fdc5ac1bcbab9993f8b2044bfb9c8833d0605353f9844343f68a6333dbeea343ff5c534bf0000803fafafafff00000000b0af2f3f96656fbcfd44ac3f862f69bf9b2f623b3ade343f172b353f68a6333dbeea343ff5c534bf0000803fafafafff0000003fb0af2f3fe82ab8bb40d0be3f411f87bf9b5582bd0037343fc116353f68a6333dbeea343ff5c534bf0000803fafafafff0000803fb0af2f3fe19ab43e1e1e9e3f095a35bfbd218ebef2fb343f3f86263fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff00000000b5b4343f3027dc3e83aab03f84c454bf319daabe33cc343fbae81f3fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff0000003fb5b4343fc0d9013fe936c33fff2e74bf9edcc8be891d343f28af173fe1eac03ed1f5343f9d3f19bf0000803fb4b4b4ff0000803fb5b4343fec5a2a3f8382a23fe62ef1bed29e0dbf6ff3343f31b6e13ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff00000000bab9393f97c04a3fe80fb53f8cb20abfdd1417bfabbb343f7475c83ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff0000003fbab9393f42266b3f4d9dc73fa4cd1cbf838520bf3106343f1b95ab3ee9081e3f8dff343f73a4b0be0000803fb9b9b9ff0000803fbab9393fe3f3543fe7e6a63f1bf4d2bdb14032bf7beb343f715f003e37ff343f1a08353f3880f4bb0000803fbebebeff00000000bfbe3e3f9b0e7a3f2c75b93f1116d6bd519e34bf8eac343f816c833d37ff343f1a08353f3880f4bb0000803fbebebeff0000003fbfbe3e3faa948f3f7203cc3f0838d9bdfa1636bfd8f0333fa2204abb37ff343f1a08353f3880f4bb0000803fbebebeff0000803fbfbe3e3fc5484d3f4c4bab3f400e9f3ec0232cbf1ce4343f70a661be0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff00000000c4c3433fc30c6e3f56dabd3f7bdcc13eb0c826bfc99e343fc7c38ebe0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff0000003fc4c3433f6168873f6069d03fb6aae43ecfe71fbf66dd333fc786aebe0ad51f3f9c0f353f89c8a93e0000803fc3c3c3ff0000803fc4c3433fd1a7123fb0afaf3f592d2b3f8969f9be4add343fb66c03bf938bc73e3216353fdbf5163f0000803fc8c8c8ff00000000c9c8483fe21b273f673fc23fc01f4a3f09b8e1be4592343fe2190ebf938bc73e3216353fdbf5163f0000803fc8c8c8ff0000003fc9c8483ff38f3b3f1ecfd43f2612693fd581c6bebccb333f74d518bf938bc73e3216353fdbf5163f0000803fc8c8c8ff0000803fc9c8483f231a453e1414b43f0800613fb5353dbe08d7343f56ea2ebfc0c4773df11b353ffa43343f0000803fcdcdcdff00000000cecd4d3fdccc513e62a4c63f2ffa823fc126febdfd86343f4fb532bfc0c4773df11b353ffa43343f0000803fcdcdcdff0000003fcecd4d3f957f5e3eb034d93f5a74953fd4de6abdd3bb333f33b435bfc0c4773df11b353ffa43343f0000803fcdcdcdff0000803fcecd4d3fb09080be7978b83f06ee613fb404263e53d1343f666730bff90791bef320353f8abd253f0000803fd2d2d2ff00000000d3d2523fec4b9ebe4a09cb3f0af4813ff90d643ee07c343f605d2cbff90791bef320353f8abd253f0000803fd2d2d2ff0000003fd3d2523f2807bcbe1c9add3f11f1923f5ffd923e98ad333f52e226bff90791bef320353f8abd253f0000803fd2d2d2ff0000803fd3d2523f5b6e26bfdddcbc3f2ba32b3f87c1f03e29cc343f507d07bfb7db0ebf4525353f5defdd3e0000803fd7d7d7ff00000000d8d7573f8fb743bf206ecf3fbe62423f8b22043feb73343f821af9beb7db0ebf4525353f5defdd3e0000803fd7d7d7ff0000003fd8d7573fc20061bf62ffe13f5122593f870c103f00a1333fa4c7dfbeb7db0ebf4525353f5defdd3e0000803fd7d7d7ff0000803fd8d7573f646d67bf4141c13fa03e933e4d562a3f8dc7343f65df77be137e32bff728353f2143ea3d0000803fdcdcdcff00000000dddc5c3f560286bfe4d2d33f25409f3eb17f2f3f156c343ffbee3abe137e32bff728353f2143ea3d0000803fdcdcdcff0000003fdddc5c3ffb4d98bf8864e63faa41ab3ed3f8333fff95333f9854efbd137e32bff728353f2143ea3d0000803fdcdcdcff0000803fdddc5c3f050372bfa6a5c53fd9f534bebb53333f7ac3343fc302d43dcdce2abf122c353fece66dbe0000803fe1e1e1ff00000000e2e1613f82838abf9b37d83ff2ba65be7ca0303f5565343fc087293ecdce2abf122c353fece66dbe0000803fe1e1e1ff0000003fe2e1613f81059cbf90c9ea3f06408bbe13912c3f928c333fa5476d3ecdce2abf122c353fece66dbe0000803fe1e1e1ff0000803fe2e1613fcc1142bf0a0aca3fcb2a1cbf0223113ff4bf343f6343d93e4667f3bea02e353f4ac805bf0000803fe6e6e6ff00000000e7e6663fb4045bbf429cdc3fb19737bffc32073fae5f343f30acf23e4667f3bea02e353f4ac805bf0000803fe6e6e6ff0000003fe7e6663f9cf773bf7a2eef3f980453bfb120f73eb684333f3651063f4667f3bea02e353f4ac805bf0000803fe6e6e6ff0000803fe7e6663f5f14c4be6e6ece3ff2a067bf83e8973efbbc343f719f243fb1692cbea830353f03a32fbf0000803febebebff00000000eceb6b3f7cc0d5bedb00e13f2ed185bf599d743e1d5b343f30142b3fb1692cbea830353f03a32fbf0000803febebebff0000003feceb6b3f996ce7be4993f33fe4d197bf5feb323e687e333f7ef7303fb1692cbea830353f03a32fbf0000803febebebff0000803feceb6b3fa914bb3dd3d2d23f9a5d7cbfc84a39bd92ba343f70f0343f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff00000000f1f0703f8833033e6865e53f861c90bf507bddbda357343f7c92333f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff0000003ff1f0703fbcdc283efef7f73f3f0aa2bf79c933beaf79333f36ee303f42b6373e2d32353fc7e92ebf0000803ff0f0f0ff0000803ff1f0703f30c50c3f3737d73f7b7154bf87bac0beb8b8343fd596193fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff00000000f6f5753f2427263fe7c9e93f72766fbf2ec5dbbe4955343ff8b5103fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff0000003ff6f5753f17893f3f975cfc3fb53d85bf96a2f7be9276333f4528063fa6a2f73e3133353f4ccd03bf0000803ff5f5f5ff0000803ff6f5753f4848613f9c9bdb3fc2f2f1be0de91dbf75b7343fd03bb23e0bb32b3fb433353f710563be0000803ffafafaff00000000fbfa7a3f883d823f592eee3fe69b04bfdcf023bfc1f3343fc5d3993e0bb32b3fb433353f710563be0000803ffafafaff0000003ffbfa7a3fedd6933f8b6000406b3e10bfd49829bff4c1343f2d0e803e0bb32b3fb433353f710563be0000803ffafafaff0000803ffbfa7a3f0000803f0000e03f2ebd3b35072e33bff0f0333f66b9013e0bb32b3fb433353f710563be0000803fffffffff000000000000803f6499913fbd92f23f91273abd052e33bff4f0333f62b9013e0bb32b3fb433353f710563be0000803fffffffff0000003f0000803fc932a33fbd920240ef27babd042e33bff6f0333f60b9013e0bb32b3fb433353f710563be0000803fffffffff0000803f0000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.028034687, y: 1.0201031, z: -0.04916221}
+    m_Extent: {x: 1.2469527, y: 1.0201031, z: 1.2167754}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
