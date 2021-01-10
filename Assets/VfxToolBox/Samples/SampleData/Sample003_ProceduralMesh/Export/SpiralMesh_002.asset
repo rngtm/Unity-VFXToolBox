@@ -6,7 +6,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Spiral Mesh
+  m_Name: SpiralMesh_002
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
