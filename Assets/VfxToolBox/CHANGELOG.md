@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.0] - 2021-01-10
+### Changes
+- Adding sample vfx.
+- Use the GameObject name as default mesh name for saving the mesh.
+- BUG FIX : Meshes are not duplicated when MeshGenerator objects are duplicated.
+
 ## [1.6.1] - 2021-01-10
 ### Changes
 - Adding spiral vfx samples into *Sample003*.
