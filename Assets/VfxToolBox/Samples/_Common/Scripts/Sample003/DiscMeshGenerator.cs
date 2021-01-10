@@ -1,64 +1,24 @@
 ﻿namespace VfxToolBox.Sample._003
 {
     using UnityEngine;
-    
+
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
     [ExecuteInEditMode]
-    public class DiscMeshGenerator : MonoBehaviour
+    public class DiscMeshGenerator : MeshGeneratorBase
     {
         [SerializeField] private int divsU = 32; // 円周方向の分割数 
         [SerializeField] private int divsV = 4; // 半径方向の分割数 
         [SerializeField] private float innerRadius = 0f;
         [SerializeField] private float outerRadius = 1f;
-        
         [SerializeField] public Gradient vertexColorU = new Gradient();
         [SerializeField] public Gradient vertexColorV = new Gradient();
-        [SerializeField, HideInInspector] private Mesh mesh;
-        [SerializeField, HideInInspector] private MeshFilter meshFilter;
-        
-        private bool needComputeMesh = false;
 
-        public Mesh Mesh => mesh;
-        
-        private void Start()
-        {
-            mesh = new Mesh();
-
-            meshFilter = GetComponent<MeshFilter>();
-            meshFilter.mesh = mesh;
-            
-            ComputeMesh(mesh);
-        }
-        
-        /// <summary>
-        /// 描画フレーム時 実行処理
-        /// </summary>
-        void Update()
-        {
-            if (needComputeMesh)
-            {
-                divsU = Mathf.Max(3, divsU);
-                divsV = Mathf.Max(2, divsV); 
-                
-                ComputeMesh(mesh);
-                needComputeMesh = false;
-            }
-        }
-
-        /// <summary>
-        /// インスペクターの値が変更されたときに呼ばれる
-        /// </summary>
-        public void OnValidate()
-        {
-            needComputeMesh = true;
-        }
-        
         /// <summary>
         /// メッシュの作成
         /// </summary>
         /// <param name="mesh"></param>
-        private void ComputeMesh(Mesh mesh)
+        protected override void ComputeMesh(Mesh mesh)
         {
             // compute points
             Vector3[] innerPoints;

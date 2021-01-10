@@ -5,7 +5,7 @@ namespace VfxToolBox.Sample._003
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
     [ExecuteInEditMode]
-    public class SpiralMeshGenerator : MonoBehaviour
+    public class SpiralMeshGenerator : MeshGeneratorBase
     {
         [SerializeField] public int curveDivsU = 32;
         [SerializeField] public int curveDivsV = 32;
@@ -23,56 +23,9 @@ namespace VfxToolBox.Sample._003
         [SerializeField] public Gradient vertexColorU = new Gradient();
         [SerializeField] public Gradient vertexColorV = new Gradient();
         
-        [SerializeField, HideInInspector] private Mesh mesh;
-        [SerializeField, HideInInspector] private MeshFilter meshFilter;
-
-        private bool needComputeMesh = false;
-
-        public Mesh Mesh => mesh;
-
-        private void Start()
+        protected override void ComputeMesh(Mesh mesh)
         {
-            mesh = new Mesh();
-            meshFilter = GetComponent<MeshFilter>();
-            meshFilter.mesh = mesh;
-
-            ComputeMesh();
-        }
-
-        /// <summary>
-        /// 描画フレーム時 実行処理
-        /// </summary>
-        void Update()
-        {
-            if (needComputeMesh)
-            {
-                ComputeMesh();
-                needComputeMesh = false;
-            }
-        }
-
-        /// <summary>
-        /// インスペクターの値が変更されたときに呼ばれる
-        /// </summary>
-        public void OnValidate()
-        {
-            needComputeMesh = true;
-        }
-        
-        void ComputeMesh()
-        {
-            if (mesh == null)
-            {
-                mesh = new Mesh();
-            }
-            
             SpiralMeshGeneratorCore.ComputeMesh(this, mesh);
-            meshFilter.mesh = mesh;
-        }
-
-        private void OnDestroy()
-        {
-            DestroyImmediate(mesh);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace VfxToolBox.Sample._003
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
     [ExecuteInEditMode]
-    public class CylinderMeshGenerator : MonoBehaviour
+    public class CylinderMeshGenerator : MeshGeneratorBase
     {
         [SerializeField] private int divsU = 16; // 円周方向の分割数
         [SerializeField] private int divsV = 4; // 高さ方向の分割数
@@ -20,47 +20,11 @@ namespace VfxToolBox.Sample._003
 
         [SerializeField] public Gradient vertexColorU = new Gradient();
         [SerializeField] public Gradient vertexColorV = new Gradient();
-        [SerializeField, HideInInspector] private Mesh mesh;
-        [SerializeField, HideInInspector] private MeshFilter meshFilter;
-
-        private bool needComputeMesh = false;
-
-        public Mesh Mesh => mesh;
-
-        private void Start()
-        {
-            mesh = new Mesh();
-
-            meshFilter = GetComponent<MeshFilter>();
-            meshFilter.mesh = mesh;
-
-            ComputeMesh(mesh);
-        }
-
-        void Update()
-        {
-            if (needComputeMesh)
-            {
-                divsU = Mathf.Max(3, divsU);
-                divsV = Mathf.Max(2, divsV);
-
-                ComputeMesh(mesh);
-                needComputeMesh = false;
-            }
-        }
-
-        /// <summary>
-        /// インスペクターの値が変更されたときに呼ばれる
-        /// </summary>
-        public void OnValidate()
-        {
-            needComputeMesh = true;
-        }
 
         /// <summary>
         /// メッシュの作成
         /// </summary>
-        private void ComputeMesh(Mesh mesh)
+        protected override void ComputeMesh(Mesh mesh)
         {
             float curveTimeMin = radiusCurveV[0].time;
             float curveTimeMax = radiusCurveV[radiusCurveV.length - 1].time;
@@ -73,16 +37,16 @@ namespace VfxToolBox.Sample._003
             var normals = new Vector3[vertexCount];
             for (int vi = 0; vi < divsV; vi++)
             {
-                float tv = (float) vi / (divsV - 1);
+                float tv = (float) vi / (divsV - 1);  // value in [0, 1]
                 float radius = radiusCurveV.Evaluate(Remap(tv, 0f, 1f, curveTimeMin, curveTimeMax));
+                
                 Vector3[] circlePoints;
                 ComputeCirclePoints(divsU, radius, height * tv, out circlePoints);
 
                 var colorV = vertexColorV.Evaluate(tv);
-                
                 for (int ui = 0; ui < divsU; ui++)
                 {
-                    float tu = (float) ui / (divsU - 1);
+                    float tu = (float) ui / (divsU - 1); // value in [0, 1]
                     var colorU = vertexColorU.Evaluate(tu);
 
                     int vertexIndex = ui + vi * divsU;
@@ -146,11 +110,7 @@ namespace VfxToolBox.Sample._003
             mesh.colors32 = colors32;
             mesh.uv = uv;
             mesh.triangles = triangles;
-
             mesh.normals = normals;
-
-            // mesh.RecalculateNormals();
-            // mesh.RecalculateTangents();
         }
 
         /// <summary>
