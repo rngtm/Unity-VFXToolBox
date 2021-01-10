@@ -76,9 +76,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_3c9579d8544e4d2b9f127940f47c8462: 0
+    - Vector1_97264ace09b2404babd0366db17a63d8: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CheckX: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -100,6 +103,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _ThresholdX: 0.5
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
