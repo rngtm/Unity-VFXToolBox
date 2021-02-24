@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.1] - 2021-01-10
+### Changes
+- Fix build failures with asmdef in Sample003.
+
 ## [1.7.0] - 2021-01-10
 ### Changes
 - Adding sample vfx.
